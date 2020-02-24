@@ -3954,7 +3954,7 @@ svg.logo text {
 	12. Footer Section Styles
 -------------------------------------------------------------------*/
 #footer {
-    background-color: #0d1e30;
+    background-color: #373058;
     padding-top: 90px;
     padding-bottom: 70px;
     text-align: center;
@@ -4002,7 +4002,7 @@ svg.logo text {
 }
 
 #footer ul.footer-menu li a:hover, #footer ul.footer-menu li a:focus {
-    color: #0074f3;
+    color: #ffffff;
     background-color: rgba(255, 255, 255, 0.05);
     -webkit-box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
@@ -4029,7 +4029,8 @@ svg.logo text {
     font-weight: 600;
     margin-bottom: 15px;
     border-radius: 10px;
-    padding: 15px 25px;
+    padding-top: 10px;
+    padding-bottom: 25px;
     margin-top: -15px;
     margin-left: -25px;
     -webkit-transition: all 0.3s ease 0s;
@@ -4050,7 +4051,6 @@ svg.logo text {
 }
 
 #footer .phone:hover {
-    background-color: #0074f3;
     -webkit-box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
@@ -4060,7 +4060,8 @@ svg.logo text {
     font-size: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
-    padding: 15px 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-top: -15px;
     margin-left: -25px;
     -webkit-transition: all 0.3s ease 0s;
@@ -4076,7 +4077,6 @@ svg.logo text {
 }
 
 #footer .email:hover {
-    background-color: #0074f3;
     -webkit-box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
@@ -4084,7 +4084,8 @@ svg.logo text {
 #footer .address {
     margin-bottom: 15px;
     border-radius: 10px;
-    padding: 15px 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     margin-top: -15px;
     margin-left: -25px;
     -webkit-transition: all 0.3s ease 0s;
@@ -4107,7 +4108,6 @@ svg.logo text {
 }
 
 #footer .address:hover {
-    background-color: #0074f3;
     -webkit-box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
@@ -4139,7 +4139,7 @@ svg.logo text {
 }
 
 #footer .social-menu li a:hover [class*="fa"], #footer .social-menu li a:focus [class*="fa"] {
-    color: #41576e;
+    color: white;
 }
 
 /*------------------------------------------------------------------

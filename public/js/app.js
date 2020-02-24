@@ -1909,6 +1909,11 @@ module.exports = {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbar */ "./resources/js/components/Navbar.vue");
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.vue");
+//
+//
+//
+//
 //
 //
 //
@@ -1949,10 +1954,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'App',
   components: {
-    Navbar: _Navbar__WEBPACK_IMPORTED_MODULE_0__["default"]
+    Navbar: _Navbar__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Footer: _Footer__WEBPACK_IMPORTED_MODULE_1__["default"]
   }
 });
 
@@ -37357,6 +37364,217 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&":
+/*!*********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374& ***!
+  \*********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "container-fluid", attrs: { id: "footer" } },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-xs-6 col-sm-4 col-md-3" }, [
+              _c("div", { staticClass: "address-holder" }, [
+                _c("div", { staticClass: "phone" }, [
+                  _c("i", { staticClass: "fas fa-phone" }),
+                  _vm._v(" 002-02-​2603653")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "email" }, [
+                  _c("i", { staticClass: "fas fa-envelope" }),
+                  _vm._v("araborganizers@hotmail.com")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "address" }, [
+                  _c("i", { staticClass: "fas fa-map-marker" }),
+                  _vm._v(" "),
+                  _c("div", [
+                    _vm._v("14 Mohamed Mandour Street,"),
+                    _c("br"),
+                    _vm._v(
+                      "\n                            Rabaa El Adwaia, Nasr City,"
+                    ),
+                    _c("br"),
+                    _vm._v("\n                            Cairo Egypt.")
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-xs-6 col-sm-2 col-md-2" }, [
+              _c("div", { staticClass: "footer-menu-holder" }, [
+                _c("h4", [_vm._v("Media Corner")]),
+                _vm._v(" "),
+                _c("ul", { staticClass: "footer-menu" }, [
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [_vm._v("Gallery")])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [_vm._v("Videos")])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-xs-6 col-sm-2 col-md-3" }, [
+              _c("div", { staticClass: "footer-menu-holder" }, [
+                _c("h4", [_vm._v("Important Links")]),
+                _vm._v(" "),
+                _c("ul", { staticClass: "footer-menu" }, [
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v(
+                        "APASL Asian Pacific Association for the Study of the Liver"
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-xs-6 col-sm-3 col-md-3" }, [
+              _c("div", { staticClass: "footer-menu-holder" }, [
+                _c("h4", [_vm._v("Quick Links")]),
+                _vm._v(" "),
+                _c("ul", { staticClass: "footer-menu" }, [
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("Current Conferences")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _vm._v("Previous Conferences")
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [_vm._v("News & Events")])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [_vm._v("Services")])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [_vm._v("Contact us")])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-xs-12 col-sm-1 col-md-1" }, [
+              _c("div", { staticClass: "social-menu-holder" }, [
+                _c("ul", { staticClass: "social-menu" }, [
+                  _c("li", [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          target: "_blank",
+                          href: "https://www.facebook.com/araborganizersadmin"
+                        }
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "fab fa-facebook",
+                          staticStyle: { color: "#3c569a" }
+                        })
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          target: "_blank",
+                          href:
+                            "https://www.instagram.com/araborganizers.official/"
+                        }
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "fab fa-instagram",
+                          staticStyle: { color: "#cd4533" }
+                        })
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          target: "_blank",
+                          href: "http://twitter.com/AOrganizers"
+                        }
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "fab fa-twitter",
+                          staticStyle: { color: "#4acdfe" }
+                        })
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          target: "_blank",
+                          href:
+                            "https://www.linkedin.com/in/arab-organizers-817a0818b/"
+                        }
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "fab fa-linkedin",
+                          staticStyle: { color: "white" }
+                        })
+                      ]
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]
+    )
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Home.vue?vue&type=template&id=f2b6376c&":
 /*!*******************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Home.vue?vue&type=template&id=f2b6376c& ***!
@@ -37374,8 +37592,16 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "main-header", attrs: { id: "header-holder" } },
-    [_vm._m(0), _vm._v(" "), _c("Navbar"), _vm._v(" "), _vm._m(1)],
+    [
+      _c(
+        "div",
+        { staticClass: "main-header", attrs: { id: "header-holder" } },
+        [_vm._m(0), _vm._v(" "), _c("Navbar"), _vm._v(" "), _vm._m(1)],
+        1
+      ),
+      _vm._v(" "),
+      _c("Footer")
+    ],
     1
   )
 }
@@ -37424,13 +37650,13 @@ var staticRenderFns = [
                   _c("div", { staticClass: "big-title" }, [
                     _c("span", [_vm._v("Arab Organizers")]),
                     _vm._v(
-                      "\n                                for Conference Management\n                            "
+                      "\n                                    for Conference Management\n                                "
                     )
                   ]),
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "\n                                Arab Organizers is a pioneer in Professional Congress Organization and Association\n                                Management.\n                            "
+                      "\n                                    Arab Organizers is a pioneer in Professional Congress Organization and\n                                    Association\n                                    Management.\n                                "
                     )
                   ]),
                   _vm._v(" "),
@@ -52884,6 +53110,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_fb05e49c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_fb05e49c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Footer.vue":
+/*!********************************************!*\
+  !*** ./resources/js/components/Footer.vue ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Footer.vue?vue&type=template&id=61a7c374& */ "./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Footer.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/Footer.vue?vue&type=template&id=61a7c374& ***!
+  \***************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Footer.vue?vue&type=template&id=61a7c374& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_61a7c374___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
