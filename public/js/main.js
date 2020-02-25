@@ -174,31 +174,6 @@ $(window).on("load", function() {
     $('.feature1 span','#custom-plan').text(cPlan.value);
     $('.feature2 span','#custom-plan').text(cPlan.value*98);
 
-    // Features Section click function
-    var featureIconHolder = $(".feature-icon-holder", "#features-links-holder");
-
-    featureIconHolder.on("click",function(){
-        featureIconHolder.removeClass("opened");
-        $(this).addClass("opened");
-        $(".show-details","#features-holder").removeClass("show-details");
-        $(".feature-d"+$(this).data("id"), "#features-holder").addClass("show-details");
-    });
-
-    // Fix #features-holder height in features section
-    var featuresHolder = $("#features-holder");
-    var featuresLinksHolder = $("#features-links-holder");
-    var featureBox = $(".show-details","#features-holder");
-
-    featuresHolder.css("height",featureBox.height()+120);
-    featuresLinksHolder.css("height",featureBox.height()+120);
-
-    // Fix #features-holder height in features section
-    $(window).on("resize",function() {
-        featuresHolder.css("height",featureBox.height()+120);
-        featuresLinksHolder.css("height",featureBox.height()+120);
-        return false;
-    });
-
     // Apps Section hover function
     var appHolder = $(".app-icon-holder", "#apps");
 

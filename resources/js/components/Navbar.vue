@@ -20,31 +20,31 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
                                     <router-link to="/">
-                                        Home
+                                        {{ $t("message.home") }}
                                     </router-link>
                                 </li>
                                 <li>
                                     <router-link to="/about">
-                                            About
+                                        {{ $t("message.about") }}
                                     </router-link>
                                 </li>
                                 <li class="dropdown">
-                                    <a href="#">Conferences <i class="fas fa-caret-down"></i></a>
+                                    <a href="#"> {{ $t("message.conf") }} <i class="fas fa-caret-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="about.html">Current Conferences</a></li>
-                                        <li><a href="blog.html">Previous Conferences</a></li>
+                                        <li><a href="about.html">{{ $t("message.curr_conf") }}</a></li>
+                                        <li><a href="blog.html">{{ $t("message.pre_conf") }}</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="index.html">News & Events</a></li>
-                                <li><a href="index.html">Services</a></li>
+                                <li><a href="index.html">{{ $t("message.news_events") }}</a></li>
+                                <li><a href="index.html">{{ $t("message.services") }}</a></li>
                                 <li class="dropdown">
-                                    <a href="#">Media Corner <i class="fas fa-caret-down"></i></a>
+                                    <a href="#">{{ $t("message.media_corner") }} <i class="fas fa-caret-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="about.html">Gallery</a></li>
-                                        <li><a href="blog.html">Videos</a></li>
+                                        <li><a href="about.html">{{ $t("message.gallery") }}</a></li>
+                                        <li><a href="blog.html">{{ $t("message.videos") }}</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="contact.html">{{ $t("message.contact_us") }}</a></li>
                             </ul>
                         </div>
                     </div>

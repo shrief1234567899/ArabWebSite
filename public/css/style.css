@@ -403,6 +403,7 @@ a, input[type="submit"] {
     margin-bottom: 200px;
     z-index: 666;
     width: 100%;
+    /*box-shadow: 3px 3px 3px 3px rgba(255,255,255,0.3);*/
     background: linear-gradient(-90deg, #fff 0%, #fff 40%, #fff 100%);
 }
 

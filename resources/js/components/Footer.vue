@@ -5,7 +5,7 @@
                 <div class="col-xs-6 col-sm-4 col-md-3">
                     <div class="address-holder">
                         <div class="phone"><i class="fas fa-phone"></i> 002-02-​2603653</div>
-                        <div class="email"><i class="fas fa-envelope"></i>araborganizers@hotmail.com</div>
+                        <div class="email"><i class="fas fa-envelope"></i> araborganizers@hotmail.com</div>
                         <div class="address">
                             <i class="fas fa-map-marker"></i>
                             <div>14 Mohamed Mandour Street,<br>
@@ -18,8 +18,8 @@
                     <div class="footer-menu-holder">
                         <h4>Media Corner</h4>
                         <ul class="footer-menu">
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">{{ $t("message.gallery") }}</a></li>
+                            <li><a href="#">{{ $t("message.videos") }}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -35,11 +35,11 @@
                     <div class="footer-menu-holder">
                         <h4>Quick Links</h4>
                         <ul class="footer-menu">
-                            <li><a href="#">Current Conferences</a></li>
-                            <li><a href="#">Previous Conferences</a></li>
-                            <li><a href="#">News & Events</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">{{ $t("message.curr_conf") }}</a></li>
+                            <li><a href="#">{{ $t("message.pre_conf") }}</a></li>
+                            <li><a href="#">{{ $t("message.news_events") }}</a></li>
+                            <li><a href="#">{{ $t("message.services") }}</a></li>
+                            <li><a href="#">{{ $t("message.contact_us") }}</a></li>
                         </ul>
                     </div>
                 </div>
