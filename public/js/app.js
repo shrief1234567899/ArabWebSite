@@ -2062,12 +2062,44 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'about',
   components: {
-    Navbar: _Navbar__WEBPACK_IMPORTED_MODULE_0__["default"]
+    Navbar: _Navbar__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Footer: _Footer__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   mounted: function mounted() {
     // Features Section click function
@@ -6720,7 +6752,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#header-holder.inner-header:before {\n    background: none !important;\n}\n.feature-title-holder {\n    margin-bottom: 30px !important;\n}\n", ""]);
+exports.push([module.i, "\nh4 {\n    line-height: 30px\n}\n#header-holder.inner-header:before {\n    background: none !important;\n}\ndiv::-webkit-scrollbar {\n    width: 5px;\n}\ndiv::-webkit-scrollbar-track {\n    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n    border-radius: 10px;\n}\ndiv::-webkit-scrollbar-thumb {\n    border-radius: 10px;\n    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);\n}\n.feature-title-holder {\n    margin-bottom: 30px !important;\n}\n.highlighted-title {\n    color: #C94328 !important;\n}\n.featured-img {\n    vertical-align: text-top;\n}\n", ""]);
 
 // exports
 
@@ -41419,7 +41451,15 @@ var staticRenderFns = [
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "feature-icon" }, [
-                      _c("i", { staticClass: "htfy htfy-worldwide" })
+                      _c("img", {
+                        staticClass: "featured-img",
+                        attrs: {
+                          alt: "",
+                          src: "images/history.svg",
+                          width: "38",
+                          height: "38"
+                        }
+                      })
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "feature-title" }, [
@@ -41440,7 +41480,15 @@ var staticRenderFns = [
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "feature-icon" }, [
-                      _c("i", { staticClass: "htfy htfy-cogwheel" })
+                      _c("img", {
+                        staticClass: "featured-img",
+                        attrs: {
+                          alt: "",
+                          src: "images/mission.svg",
+                          width: "38",
+                          height: "38"
+                        }
+                      })
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "feature-title" }, [
@@ -41461,7 +41509,15 @@ var staticRenderFns = [
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "feature-icon" }, [
-                      _c("i", { staticClass: "htfy htfy-location" })
+                      _c("img", {
+                        staticClass: "featured-img",
+                        attrs: {
+                          alt: "",
+                          src: "images/vision.svg",
+                          width: "38",
+                          height: "38"
+                        }
+                      })
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "feature-title" }, [
@@ -41482,7 +41538,15 @@ var staticRenderFns = [
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "feature-icon" }, [
-                      _c("i", { staticClass: "htfy htfy-download" })
+                      _c("img", {
+                        staticClass: "featured-img",
+                        attrs: {
+                          alt: "",
+                          src: "images/core_values.svg",
+                          width: "38",
+                          height: "38"
+                        }
+                      })
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "feature-title" }, [
@@ -41497,58 +41561,70 @@ var staticRenderFns = [
               _c("div", { attrs: { id: "features-holder" } }, [
                 _c(
                   "div",
-                  { staticClass: "feature-box feature-d1 show-details" },
+                  {
+                    staticClass: "feature-box feature-d1 show-details",
+                    staticStyle: { height: "370px", overflow: "auto" }
+                  },
                   [
                     _c("div", { staticClass: "feature-title-holder" }, [
                       _c("span", { staticClass: "feature-icon" }, [
-                        _c("i", { staticClass: "htfy htfy-worldwide" })
+                        _c("img", {
+                          attrs: {
+                            alt: "",
+                            src: "images/r_history.svg",
+                            width: "34",
+                            height: "34"
+                          }
+                        })
                       ]),
                       _vm._v(" "),
-                      _c("span", { staticClass: "feature-title" }, [
-                        _vm._v("Our History")
-                      ])
+                      _c(
+                        "span",
+                        { staticClass: "feature-title highlighted-title" },
+                        [_vm._v("Our History")]
+                      )
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "feature-details" }, [
-                      _c("h4", { staticStyle: { "line-height": "30px" } }, [
+                      _c("h4", [
                         _vm._v(
-                          "\n                                        Arab Organizers for Conference Management is a pioneer in Professional Congress Organization and Association Management.\n                                    "
+                          "\n                                        Arab Organizers for Conference Management is a pioneer in Professional\n                                        Congress Organization and Association Management.\n                                    "
                         )
                       ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          "\n                                        The company is committed to providing the highest standard of service to medical and scientific associations, aiding in the facilitation of global exchange and management of medical knowledge.\n                                    "
+                          "\n                                        The company is committed to providing the highest standard of service to\n                                        medical and scientific associations, aiding in the facilitation of global\n                                        exchange and management of medical knowledge.\n                                    "
                         )
                       ]),
                       _vm._v(" "),
-                      _c("h4", { staticStyle: { "line-height": "30px" } }, [
+                      _c("h4", [
                         _vm._v(
-                          "\n                                        We are a global company with a local presence providing our services to scientific Organizations and Medical Societies all over Egypt.\n                                    "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [
-                        _vm._v(
-                          "We depend on our accountability and trust to provide the highest standards of service to our clients. We have a self-motivated, professional, trustable Staff devoted to the standards of integrity and common values of our mission."
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("h4", { staticStyle: { "line-height": "30px" } }, [
-                        _vm._v(
-                          "Our employees are proud and confident to be key players in achieving our clients' needs and goals."
+                          "\n                                        We are a global company with a local presence providing our services to\n                                        scientific Organizations and Medical Societies all over Egypt.\n                                    "
                         )
                       ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          "We have the flexibility to tailor our services to meet our clients' needs as well as the market needs."
+                          "We depend on our accountability and trust to provide the highest standards of\n                                        service to our clients. We have a self-motivated, professional, trustable\n                                        Staff devoted to the standards of integrity and common values of our\n                                        mission."
                         )
                       ]),
                       _vm._v(" "),
-                      _c("h4", { staticStyle: { "line-height": "30px" } }, [
+                      _c("h4", [
                         _vm._v(
-                          "Honesty is the only mean to earn trust; this is why we are confident that our continued success, self-growing and professionalism will be the reasons to take our organization to higher and higher levels."
+                          "Our employees are proud and confident to be key\n                                        players in achieving our clients' needs and goals."
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("p", [
+                        _vm._v(
+                          "We have the flexibility to tailor our services to meet our clients' needs as\n                                        well as the market needs."
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("h4", [
+                        _vm._v(
+                          "Honesty is the only mean to earn trust; this is\n                                        why we are confident that our continued success, self-growing and\n                                        professionalism will be the reasons to take our organization to higher and\n                                        higher levels."
                         )
                       ])
                     ])
@@ -41558,24 +41634,27 @@ var staticRenderFns = [
                 _c("div", { staticClass: "feature-box feature-d2" }, [
                   _c("div", { staticClass: "feature-title-holder" }, [
                     _c("span", { staticClass: "feature-icon" }, [
-                      _c("i", { staticClass: "htfy htfy-cogwheel" })
+                      _c("img", {
+                        attrs: {
+                          alt: "",
+                          src: "images/r_mission.svg",
+                          width: "34",
+                          height: "34"
+                        }
+                      })
                     ]),
                     _vm._v(" "),
-                    _c("span", { staticClass: "feature-title" }, [
-                      _vm._v("Easy control panel")
-                    ])
+                    _c(
+                      "span",
+                      { staticClass: "feature-title highlighted-title" },
+                      [_vm._v("Mission")]
+                    )
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "feature-details" }, [
-                    _c("p", [
+                    _c("h4", [
                       _vm._v(
-                        "At vero eos et accusamus et iusto odio dignissimos\n                                        ducimus qui blanditiis praesentium voluptatum div\n                                        atque corrupti quos dolores et quas molestias."
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("p", [
-                      _vm._v(
-                        "dignissimos ducimus qui blanditiis praesentium\n                                        voluptatum div atque corrupti quos dolores et quas\n                                        unimo molestias."
+                        "Deliver top-notch events, Inspire the region with our talents and\n                                        Createvalue that makes a difference!"
                       )
                     ])
                   ])
@@ -41584,24 +41663,27 @@ var staticRenderFns = [
                 _c("div", { staticClass: "feature-box feature-d3" }, [
                   _c("div", { staticClass: "feature-title-holder" }, [
                     _c("span", { staticClass: "feature-icon" }, [
-                      _c("i", { staticClass: "htfy htfy-location" })
+                      _c("img", {
+                        attrs: {
+                          alt: "",
+                          src: "images/r_vision.svg",
+                          width: "34",
+                          height: "34"
+                        }
+                      })
                     ]),
                     _vm._v(" "),
-                    _c("span", { staticClass: "feature-title" }, [
-                      _vm._v("Email Marketing")
-                    ])
+                    _c(
+                      "span",
+                      { staticClass: "feature-title highlighted-title" },
+                      [_vm._v("Vision")]
+                    )
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "feature-details" }, [
-                    _c("p", [
+                    _c("h4", [
                       _vm._v(
-                        "At vero eos et accusamus et iusto odio dignissimos\n                                        ducimus qui blanditiis praesentium voluptatum div\n                                        atque corrupti quos dolores et quas molestias."
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("p", [
-                      _vm._v(
-                        "dignissimos ducimus qui blanditiis praesentium\n                                        voluptatum div atque corrupti quos dolores et quas\n                                        unimo molestias."
+                        "To Grow One of the Biggest Event Management Company Operating in Diverse\n                                        Sectors In MENA Region."
                       )
                     ])
                   ])
@@ -41610,25 +41692,36 @@ var staticRenderFns = [
                 _c("div", { staticClass: "feature-box feature-d4" }, [
                   _c("div", { staticClass: "feature-title-holder" }, [
                     _c("span", { staticClass: "feature-icon" }, [
-                      _c("i", { staticClass: "htfy htfy-download" })
+                      _c("img", {
+                        attrs: {
+                          alt: "",
+                          src: "images/r_core_values.svg",
+                          width: "34",
+                          height: "34"
+                        }
+                      })
                     ]),
                     _vm._v(" "),
-                    _c("span", { staticClass: "feature-title" }, [
-                      _vm._v("1CLICK Script Installs")
-                    ])
+                    _c(
+                      "span",
+                      { staticClass: "feature-title highlighted-title" },
+                      [_vm._v("Core Values")]
+                    )
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "feature-details" }, [
-                    _c("p", [
-                      _vm._v(
-                        "At vero eos et accusamus et iusto odio dignissimos\n                                        ducimus qui blanditiis praesentium voluptatum div\n                                        atque corrupti quos dolores et quas molestias."
-                      )
+                    _c("h4", [
+                      _vm._v("Ownership – Personal accountability comes first.")
                     ]),
                     _vm._v(" "),
-                    _c("p", [
-                      _vm._v(
-                        "dignissimos ducimus qui blanditiis praesentium\n                                        voluptatum div atque corrupti quos dolores et quas\n                                        unimo molestias."
-                      )
+                    _c("h4", [_vm._v("Integrity – To do it just right!")]),
+                    _vm._v(" "),
+                    _c("h4", [_vm._v("Transparency – NO blinds allowed.")]),
+                    _vm._v(" "),
+                    _c("h4", [_vm._v("Passion – Let your passion guide you!")]),
+                    _vm._v(" "),
+                    _c("h4", [
+                      _vm._v("Diversity – None of us is as smart as all of us.")
                     ])
                   ])
                 ])

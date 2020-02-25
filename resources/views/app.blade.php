@@ -18,6 +18,21 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/custom.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/slider.css')}}">
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 <body>
 <div id="app"></div>

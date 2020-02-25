@@ -3621,7 +3621,7 @@ svg.logo text {
     width: 62px;
     height: 62px;
     border-radius: 100px;
-    background-color: #8392b5;
+    background-color: #383058;
     text-align: center;
     padding-top: 8px;
     z-index: 100;
@@ -3631,7 +3631,7 @@ svg.logo text {
 }
 
 #features-links-holder .feature-icon-holder.opened {
-    background-color: #3481ec;
+    background-color: #C94328;
 }
 
 #features-links-holder .feature-icon-holder.opened .animation-holder {
