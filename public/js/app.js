@@ -2155,6 +2155,90 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -42034,12 +42118,187 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
+      _c("div", [
+        _c(
+          "div",
+          { staticClass: "col-md-12", staticStyle: { "margin-top": "50px" } },
+          [
+            _c("div", { staticClass: "row-title" }, [
+              _vm._v(_vm._s(_vm.$t("message.curr_conf")))
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row-subtitle" })
+          ]
+        ),
+        _vm._v(" "),
+        _vm._m(0)
+      ]),
+      _vm._v(" "),
       _c("Footer")
     ],
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "container-fluid", attrs: { id: "articles" } },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+              _c("div", { staticClass: "article-summary" }, [
+                _c("div", { staticClass: "article-img" }, [
+                  _c("img", { attrs: { src: "images/article1.jpg", alt: "" } })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "article-details" }, [
+                  _c("div", { staticClass: "article-title" }, [
+                    _c("a", { attrs: { href: "post.html" } }, [
+                      _vm._v(
+                        "Lorem ipsum dolor sit amet,\n                                    consect"
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "article-text" }, [
+                    _vm._v(
+                      "Lorem ipsum dolor sit amet, consectetuer elit, sed diam\n                                    nonummy nibh tincidunt ut laoreet dolore magna aliquam erat.\n                                "
+                    )
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+              _c("div", { staticClass: "article-summary" }, [
+                _c("div", { staticClass: "article-img" }, [
+                  _c("img", { attrs: { src: "images/article2.jpg", alt: "" } })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "article-details" }, [
+                  _c("div", { staticClass: "article-title" }, [
+                    _c("a", { attrs: { href: "post.html" } }, [
+                      _vm._v(
+                        "Ut laoreet dolore magna aliquam\n                                    erat"
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "article-text" }, [
+                    _vm._v(
+                      "Lorem ipsum dolor sit amet, consectetuer elit, sed diam\n                                    nonummy nibh tincidunt ut laoreet dolore magna aliquam erat.\n                                "
+                    )
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+              _c("div", { staticClass: "article-summary" }, [
+                _c("div", { staticClass: "article-img" }, [
+                  _c("img", { attrs: { src: "images/article3.jpg", alt: "" } })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "article-details" }, [
+                  _c("div", { staticClass: "article-title" }, [
+                    _c("a", { attrs: { href: "post.html" } }, [
+                      _vm._v(
+                        "Nibh tincidunt ut laoreet dolore\n                                    magna aliquam"
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "article-text" }, [
+                    _vm._v(
+                      "Lorem ipsum dolor sit amet, consectetuer elit, sed diam\n                                    nonummy nibh tincidunt ut laoreet dolore magna aliquam erat.\n                                "
+                    )
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+              _c("div", { staticClass: "article-summary" }, [
+                _c("div", { staticClass: "article-img" }, [
+                  _c("img", { attrs: { src: "images/article4.jpg", alt: "" } })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "article-details" }, [
+                  _c("div", { staticClass: "article-title" }, [
+                    _c("a", { attrs: { href: "post.html" } }, [
+                      _vm._v(
+                        "Consectetuer elit, sed diam nonummy\n                                    nibh tincidunt"
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "article-text" }, [
+                    _vm._v(
+                      "Lorem ipsum dolor sit amet, consectetuer elit, sed diam\n                                    nonummy nibh tincidunt ut laoreet dolore magna aliquam erat.\n                                "
+                    )
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+              _c("div", { staticClass: "article-summary" }, [
+                _c("div", { staticClass: "article-img" }, [
+                  _c("img", { attrs: { src: "images/article6.jpg", alt: "" } })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "article-details" }, [
+                  _c("div", { staticClass: "article-title" }, [
+                    _c("a", { attrs: { href: "post.html" } }, [
+                      _vm._v(
+                        "Lorem ipsum dolor sit amet, consect\n                                    Ut laoreet dolore magna aliquam erat"
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "article-text" }, [
+                    _vm._v(
+                      "Lorem ipsum dolor sit amet, consectetuer elit, sed diam\n                                    nonummy nibh tincidunt ut laoreet dolore magna aliquam erat.\n                                "
+                    )
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+              _c("div", { staticClass: "article-summary" }, [
+                _c("div", { staticClass: "article-img" }, [
+                  _c("img", { attrs: { src: "images/article1.jpg", alt: "" } })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "article-details" }, [
+                  _c("div", { staticClass: "article-title" }, [
+                    _c("a", { attrs: { href: "post.html" } }, [
+                      _vm._v(
+                        "Lorem ipsum dolor sit amet, consect\n                                    Ut laoreet dolore magna aliquam erat"
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "article-text" }, [
+                    _vm._v(
+                      "Lorem ipsum dolor sit amet, consectetuer elit, sed diam\n                                    nonummy nibh tincidunt ut laoreet dolore magna aliquam erat.\n                                "
+                    )
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 
