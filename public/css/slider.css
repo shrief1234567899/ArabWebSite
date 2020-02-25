@@ -1,0 +1,36 @@
+.agile__dots {
+    bottom: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    right: 30px;
+    position: absolute;
+}
+.agile__dot {
+    margin: 5px 0;
+}
+.agile__dot button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    font-size: 0;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    width: 10px;
+}
+.agile__dot--current button, .agile__dot:hover button {
+    background-color: #fff;
+}
+
+.slide {
+    display: block;
+    height: 500px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+}

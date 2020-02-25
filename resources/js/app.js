@@ -4,6 +4,7 @@ import Routes from '@/js/routes.js';
 import App from '@/js/views/App';
 
 window.Vue = require('vue');
+window.JQuery = require('jquery');
 
 const app = new Vue({
     el: '#app',
