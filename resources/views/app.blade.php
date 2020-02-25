@@ -29,4 +29,12 @@
 <script src="{{asset('js/bootstrap-slider.min.js')}}"></script>
 <script src="{{asset('js/slick.min.js')}}"></script>
 <script src="{{asset('js/main.js')}}"></script>
+<script>
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".navbar-full");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
 </html>

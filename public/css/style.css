@@ -89,6 +89,26 @@ a, input[type="submit"] {
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
+
+.navbar-full.scrolled {
+    background: linear-gradient(-90deg, #373058 0%, #373058 40%, #fff 100%) !important;
+    transition: background-color 200ms linear;
+    box-shadow: 2px 2px 2px 2px rgba(125, 125, 125, 0.3);
+    width: 100%;
+}
+
+.navbar-full.scrolled .nav-link {
+    color:#fff;
+}
+
+.navbar-full.scrolled .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-full.scrolled .navbar-nav > li > a:hover, .navbar-full.scrolled .navbar-nav > li > a:focus {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .slick-dots li.slick-active {
     opacity: 1;
 }
