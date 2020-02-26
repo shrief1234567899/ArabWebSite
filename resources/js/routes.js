@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 
 import Home from '@/js/components/Home';
 import About from '@/js/components/About';
-import ConferenceDetails from '@/js/components/ConferenceDetails';
+import ConferenceDetails from '@/js/components/conference/ConferenceDetails';
 
 Vue.use(VueRouter);
 

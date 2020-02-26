@@ -1,3 +1,11 @@
+<style>
+    .article-text {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+</style>
 <template>
     <div id="articles" class="container-fluid">
         <div class="container">
@@ -47,7 +55,7 @@
                             <div class="article-details">
                                 <div class="article-title"><a href="#">Hemo-Alex 2002</a></div>
                                 <div class="article-text">
-                                    The Egyptian Society of Hemato-Oncology and Bone Marrow Transplantation
+                                    The Egyptian Society of Hemato-Oncology and Bone Marrow Transplantation adahsdhjagsdhsagdjgsajdgsagdjagjdgjsagdgasjdg
                                 </div>
                             </div>
                         </div>

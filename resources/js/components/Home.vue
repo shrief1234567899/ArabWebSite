@@ -24,7 +24,7 @@
 <script>
     import Navbar from './Navbar'
     import Footer from './Footer'
-    import Conferences from './Conferences'
+    import Conferences from './conference/Conferences'
     import {VueAgile} from 'vue-agile'
 
     export default {

@@ -4315,9 +4315,6 @@ svg.logo text {
     opacity: 1;
 }
 
-.form-holder {
-    margin-left: 550px;
-}
 
 .form-holder .menu-holder {
     text-align: right;
@@ -4417,7 +4414,6 @@ svg.logo text {
 
 .form-holder .signin-signup-form {
     text-align: center;
-    padding: 100px 40px 40px;
 }
 
 .form-holder .signin-signup-form ::-webkit-input-placeholder {
@@ -4455,7 +4451,6 @@ svg.logo text {
 .signin-signup-form .form-items {
     display: inline-block;
     width: 100%;
-    max-width: 410px;
 }
 
 .signin-signup-form .form-title {
@@ -4495,7 +4490,7 @@ svg.logo text {
     border: 0;
     outline: 0;
     border-radius: 8px;
-    background-color: #f0f4fd;
+    background-color: #f1f1f1;
     font-size: 13px;
     color: #526489;
     -webkit-transition: all 0.3s ease 0s;
@@ -4503,15 +4498,14 @@ svg.logo text {
 }
 
 .signin-signup-form .form-text input:hover, .signin-signup-form .form-text input:focus, .signin-signup-form .form-text .dropdown-toggle.btn-default:hover, .signin-signup-form .form-text .dropdown-toggle.btn-default:focus {
-    background-color: #ebeff8;
+    background-color: #e8e6e6;
 }
-
 .signin-signup-form .form-text textarea {
     width: 100%;
     padding: 8px 20px;
     border-radius: 8px;
     text-align: left;
-    background-color: #ffffff;
+    background-color: #f1f1f1;
     border: 0;
     font-size: 13px;
     color: #526489;
@@ -4521,7 +4515,7 @@ svg.logo text {
 }
 
 .signin-signup-form .form-text textarea:hover, .signin-signup-form .form-text textarea:focus {
-    background-color: #ebeff8;
+    background-color: #e8e6e6;
 }
 
 .signin-signup-form .form-text.text-holder {
@@ -4817,7 +4811,7 @@ svg.logo text {
 }
 
 #header-holder.serverspage-header #page-head .head-content p {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 35px;
@@ -5204,7 +5198,7 @@ svg.logo text {
     font-size: 16px;
     font-weight: 600;
     text-align: left;
-    color: #ffffff;
+    color: #373058;
     background-color: transparent;
     border-radius: 15px;
     -webkit-box-shadow: 0 8px 18px transparent;
@@ -5231,7 +5225,8 @@ svg.logo text {
 }
 
 #more-info .links-holder ul li .info-link:hover, #more-info .links-holder ul li .info-link:focus, #more-info .links-holder ul li .info-link.opened {
-    background-color: #3195ff;
+    background-color: #c94328;
+    color: white;
     -webkit-box-shadow: 0 12px 67px rgba(0, 0, 0, 0.08);
     box-shadow: 0 12px 67px rgba(0, 0, 0, 0.08);
 }
@@ -5261,7 +5256,7 @@ svg.logo text {
 
 .info-details-holder {
     position: relative;
-    min-height: 250px;
+    min-height: 600px;
 }
 
 .info-details-holder .info-details {
