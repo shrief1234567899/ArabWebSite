@@ -91,22 +91,23 @@ a, input[type="submit"] {
 
 
 .navbar-full.scrolled {
-    background: linear-gradient(-90deg, #373058 0%, #373058 40%, #fff 100%) !important;
+    /*background: linear-gradient(-90deg, #fff 0%, #fff 40%, #fff 100%) !important;*/
+    background-color: rgb(255, 255, 255);
     transition: background-color 200ms linear;
-    box-shadow: 2px 2px 2px 2px rgba(125, 125, 125, 0.3);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 24px 0px;
     width: 100%;
 }
 
 .navbar-full.scrolled .nav-link {
-    color:#fff;
+    /*color:#fff;*/
 }
 
 .navbar-full.scrolled .navbar-nav > li > a {
-    color: #fff;
+    /*color: #fff;*/
 }
 
 .navbar-full.scrolled .navbar-nav > li > a:hover, .navbar-full.scrolled .navbar-nav > li > a:focus {
-    color: rgba(255, 255, 255, 0.7);
+    /*color: rgba(255, 255, 255, 0.7);*/
 }
 
 .slick-dots li.slick-active {
@@ -148,7 +149,8 @@ a, input[type="submit"] {
     content: "";
     width: 156px;
     height: 2px;
-    background-color: #D9E3F2;
+    background-image: linear-gradient(360deg, #fff, #c94328);
+    box-shadow: rgba(0,0,0,0.09) 1px 1px 30px 2px;
     left: 50%;
     margin-left: -78px;
     bottom: -15px;
@@ -423,7 +425,6 @@ a, input[type="submit"] {
     margin-bottom: 200px;
     z-index: 666;
     width: 100%;
-    /*box-shadow: 3px 3px 3px 3px rgba(255,255,255,0.3);*/
     background: linear-gradient(-90deg, #fff 0%, #fff 40%, #fff 100%);
 }
 
@@ -5705,6 +5706,7 @@ svg.logo text {
 
 #articles .article-summary .article-img img {
     border-radius: 20px;
+    height: 300px;
     width: 100%;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -7066,6 +7068,12 @@ svg.logo text {
 }
 
 @media (max-width: 768px) {
+    .logo-holder{
+        position: absolute;
+        left: 10% !important;
+        margin-left: -50px !important;
+        display: block;
+    }
     #header-holder {
         margin-bottom: 50px;
     }
@@ -7382,6 +7390,20 @@ svg.logo text {
 
     .darkbg .info-details-holder {
         min-height: 340px;
+    }
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+    .logo-holder{
+        position: absolute;
+        left: 46% !important;
+        margin-left: -50px !important;
+        display: block;
+        padding-top: 2%;
+    }
+    .logo{
+        width: 120px !important;
+        height: 80px !important;
     }
 }
 

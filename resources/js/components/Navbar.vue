@@ -11,13 +11,13 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <router-link to="/" class="logo-holder">
-                                <div class="logo" style="width:300px;height:60px"></div>
-                            </router-link>
+<!--                            <router-link to="/" class="logo-holder" style="position: absolute;left: 40%;margin-left: -50px !important;display: block;">-->
+<!--                                <div class="logo" style="width:300px;height:60px;"></div>-->
+<!--                            </router-link>-->
                         </div>
                         <div style="height: 1px;" role="main" aria-expanded="false" class="navbar-collapse collapse"
                              id="bs">
-                            <ul class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav navbar-left">
                                 <li>
                                     <router-link to="/">
                                         {{ $t("message.home") }}
@@ -35,7 +35,9 @@
                                         <li><a href="blog.html">{{ $t("message.pre_conf") }}</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="index.html">{{ $t("message.news_events") }}</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+<!--                                <li><a href="index.html">{{ $t("message.news_events") }}</a></li>-->
                                 <li><a href="index.html">{{ $t("message.services") }}</a></li>
                                 <li class="dropdown">
                                     <a href="#">{{ $t("message.media_corner") }} <i class="fas fa-caret-down"></i></a>
