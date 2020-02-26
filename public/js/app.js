@@ -42534,7 +42534,34 @@ var render = function() {
         _c("div", { staticClass: "container container-nav" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-md-12" }, [
-              _vm._m(0),
+              _c(
+                "div",
+                { staticClass: "navbar-header" },
+                [
+                  _vm._m(0),
+                  _vm._v(" "),
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "logo-holder",
+                      staticStyle: {
+                        position: "absolute",
+                        left: "40%",
+                        "margin-left": "-50px !important",
+                        display: "block"
+                      },
+                      attrs: { to: "/" }
+                    },
+                    [
+                      _c("div", {
+                        staticClass: "logo",
+                        staticStyle: { width: "300px", height: "60px" }
+                      })
+                    ]
+                  )
+                ],
+                1
+              ),
               _vm._v(" "),
               _c(
                 "div",
@@ -42643,27 +42670,25 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "navbar-header" }, [
-      _c(
-        "button",
-        {
-          staticClass: "navbar-toggle collapsed",
-          attrs: {
-            "aria-expanded": "false",
-            type: "button",
-            "data-toggle": "collapse",
-            "data-target": "#bs"
-          }
-        },
-        [
-          _c("span", { staticClass: "icon-bar" }),
-          _vm._v(" "),
-          _c("span", { staticClass: "icon-bar" }),
-          _vm._v(" "),
-          _c("span", { staticClass: "icon-bar" })
-        ]
-      )
-    ])
+    return _c(
+      "button",
+      {
+        staticClass: "navbar-toggle collapsed",
+        attrs: {
+          "aria-expanded": "false",
+          type: "button",
+          "data-toggle": "collapse",
+          "data-target": "#bs"
+        }
+      },
+      [
+        _c("span", { staticClass: "icon-bar" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "icon-bar" }),
+        _vm._v(" "),
+        _c("span", { staticClass: "icon-bar" })
+      ]
+    )
   }
 ]
 render._withStripped = true
