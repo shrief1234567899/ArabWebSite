@@ -1,5 +1,13 @@
 <template>
     <div>
+        <loading :active.sync="isLoading"
+                 color="#c94328"
+                 :can-cancel="true"
+                 :height="100"
+                 :width="200"
+                 :opacity="0.6"
+                 :on-cancel="onCancel"
+                 :is-full-page="fullPage"></loading>
         <Navbar/>
         <div>
             <div id="header-holder" class="inner-header hosting-page" style="background-color: #2D3439 !important">
@@ -35,14 +43,16 @@
                                     <div class="animation-holder">
                                         <div class="special-gradiant"></div>
                                     </div>
-                                    <div class="feature-icon"><img alt class="featured-img" src="images/history.svg" width="38" height="38"/></div>
+                                    <div class="feature-icon"><img alt class="featured-img" src="images/history.svg"
+                                                                   width="38" height="38"/></div>
                                     <div class="feature-title">Our History</div>
                                 </div>
                                 <div class="feature-icon-holder feature-icon-holder2" data-id="2">
                                     <div class="animation-holder">
                                         <div class="special-gradiant"></div>
                                     </div>
-                                    <div class="feature-icon"><img alt class="featured-img" src="images/mission.svg" width="38" height="38"/>
+                                    <div class="feature-icon"><img alt class="featured-img" src="images/mission.svg"
+                                                                   width="38" height="38"/>
                                     </div>
                                     <div class="feature-title">Mission</div>
                                 </div>
@@ -50,7 +60,8 @@
                                     <div class="animation-holder">
                                         <div class="special-gradiant"></div>
                                     </div>
-                                    <div class="feature-icon"><img class="featured-img" alt src="images/vision.svg" width="38" height="38"/>
+                                    <div class="feature-icon"><img class="featured-img" alt src="images/vision.svg"
+                                                                   width="38" height="38"/>
                                     </div>
                                     <div class="feature-title">Vision</div>
                                 </div>
@@ -58,7 +69,8 @@
                                     <div class="animation-holder">
                                         <div class="special-gradiant"></div>
                                     </div>
-                                    <div class="feature-icon"><img class="featured-img" alt src="images/core_values.svg" width="38"
+                                    <div class="feature-icon"><img class="featured-img" alt src="images/core_values.svg"
+                                                                   width="38"
                                                                    height="38"/></div>
                                     <div class="feature-title">Core values</div>
                                 </div>
@@ -184,13 +196,30 @@
 <script>
     import Navbar from './Navbar';
     import Footer from './Footer'
+    import Loading from 'vue-loading-overlay';
+    import 'vue-loading-overlay/dist/vue-loading.css';
 
     export default {
         name: 'about',
+        data() {
+            return {
+                isLoading: true,
+                fullPage: true
+            }
+        },
         components: {
-            Navbar, Footer
+            Navbar, Footer, Loading
         },
         mounted() {
+            var screen = this;
+            var interval = setInterval(function () {
+                if (document.readyState === 'complete') {
+                    clearInterval(interval);
+                    setTimeout(function () {
+                        screen.isLoading = false;
+                    }, 500);
+                }
+            }, 100);
             // Features Section click function
             var featureIconHolder = $(".feature-icon-holder", "#features-links-holder");
             featureIconHolder.on("click", function () {
@@ -211,6 +240,10 @@
                 featuresLinksHolder.css("height", 316 + 120);
                 return false;
             });
+        },
+        methods: {
+            onCancel() {
+            }
         }
     }
 </script>

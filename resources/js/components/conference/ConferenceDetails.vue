@@ -181,7 +181,8 @@
                     }, 500);
                 }
             }, 100);
-
+            $('.info-details').fadeOut();
+            $('.info-d1').fadeIn();
             infoLink.on("click", function () {
                 infoLink.removeClass("opened");
                 $(this).addClass("opened");

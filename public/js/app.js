@@ -1910,6 +1910,10 @@ module.exports = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbar */ "./resources/js/components/Navbar.vue");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.vue");
+/* harmony import */ var vue_loading_overlay__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-loading-overlay */ "./node_modules/vue-loading-overlay/dist/vue-loading.min.js");
+/* harmony import */ var vue_loading_overlay__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_loading_overlay__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var vue_loading_overlay_dist_vue_loading_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-loading-overlay/dist/vue-loading.css */ "./node_modules/vue-loading-overlay/dist/vue-loading.css");
+/* harmony import */ var vue_loading_overlay_dist_vue_loading_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vue_loading_overlay_dist_vue_loading_css__WEBPACK_IMPORTED_MODULE_3__);
 //
 //
 //
@@ -2093,16 +2097,46 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'about',
+  data: function data() {
+    return {
+      isLoading: true,
+      fullPage: true
+    };
+  },
   components: {
     Navbar: _Navbar__WEBPACK_IMPORTED_MODULE_0__["default"],
-    Footer: _Footer__WEBPACK_IMPORTED_MODULE_1__["default"]
+    Footer: _Footer__WEBPACK_IMPORTED_MODULE_1__["default"],
+    Loading: vue_loading_overlay__WEBPACK_IMPORTED_MODULE_2___default.a
   },
   mounted: function mounted() {
-    // Features Section click function
+    var screen = this;
+    var interval = setInterval(function () {
+      if (document.readyState === 'complete') {
+        clearInterval(interval);
+        setTimeout(function () {
+          screen.isLoading = false;
+        }, 500);
+      }
+    }, 100); // Features Section click function
+
     var featureIconHolder = $(".feature-icon-holder", "#features-links-holder");
     featureIconHolder.on("click", function () {
       featureIconHolder.removeClass("opened");
@@ -2122,6 +2156,9 @@ __webpack_require__.r(__webpack_exports__);
       featuresLinksHolder.css("height", 316 + 120);
       return false;
     });
+  },
+  methods: {
+    onCancel: function onCancel() {}
   }
 });
 
@@ -2416,6 +2453,8 @@ __webpack_require__.r(__webpack_exports__);
         }, 500);
       }
     }, 100);
+    $('.info-details').fadeOut();
+    $('.info-d1').fadeIn();
     infoLink.on("click", function () {
       infoLink.removeClass("opened");
       $(this).addClass("opened");
@@ -41938,7 +41977,31 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    [_c("Navbar"), _vm._v(" "), _vm._m(0), _vm._v(" "), _c("Footer")],
+    [
+      _c("loading", {
+        attrs: {
+          active: _vm.isLoading,
+          color: "#c94328",
+          "can-cancel": true,
+          height: 100,
+          width: 200,
+          opacity: 0.6,
+          "on-cancel": _vm.onCancel,
+          "is-full-page": _vm.fullPage
+        },
+        on: {
+          "update:active": function($event) {
+            _vm.isLoading = $event
+          }
+        }
+      }),
+      _vm._v(" "),
+      _c("Navbar"),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _c("Footer")
+    ],
     1
   )
 }
