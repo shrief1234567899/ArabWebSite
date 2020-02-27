@@ -20,7 +20,14 @@
 
     .links-holder {
         background-color: #f1f1f1;
+        border-radius: 10%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
+
+    .iframe{
+        border-radius: 10px;
+    }
+
 </style>
 <template>
     <div>
@@ -88,9 +95,13 @@
             </div>
         </div>
         <div id="more-info" class="container-fluid">
+            <div class="col-md-12">
+                <div class="row-title">CLINICAL ONCOLOGY</div>
+                <div class="row-subtitle"></div>
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="links-holder">
                             <ul>
                                 <li>
@@ -108,21 +119,23 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         <div class="info-details-holder">
                             <div class="info-details info-d1 show-details">
-                                <pdf src="https://araborganizers.org/UserFiles/ConferencesBrochures/_Brochure_78cb31d4-6682-4f8d-9af0-abd2729fe0ac.pdf" :page="1">
-                                    <template slot="loading">
-                                        loading content here...
-                                    </template>
-                                </pdf>
+                                <object class="iframe" data="https://araborganizers.org/UserFiles/ConferencesBrochures/_Brochure_78cb31d4-6682-4f8d-9af0-abd2729fe0ac.pdf"
+                                        type="application/pdf"
+                                        width="100%" height="600">
+                                    <embed src="https://araborganizers.org/UserFiles/ConferencesBrochures/_Brochure_78cb31d4-6682-4f8d-9af0-abd2729fe0ac.pdf"
+                                           type="application/pdf"/>
+                                </object>
                             </div>
                             <div class="info-details info-d2">
-                                <pdf src="https://araborganizers.org/UserFiles/ConferencesBrochures/_Brochure_78cb31d4-6682-4f8d-9af0-abd2729fe0ac.pdf" :page="1">
-                                    <template slot="loading">
-                                        loading content here...
-                                    </template>
-                                </pdf>
+                                <object class="iframe" data="https://araborganizers.org/UserFiles/ConferencesBrochures/_Brochure_78cb31d4-6682-4f8d-9af0-abd2729fe0ac.pdf"
+                                        type="application/pdf"
+                                        width="100%" height="600">
+                                    <embed src="https://araborganizers.org/UserFiles/ConferencesBrochures/_Brochure_78cb31d4-6682-4f8d-9af0-abd2729fe0ac.pdf"
+                                           type="application/pdf"/>
+                                </object>
                             </div>
                             <div class="info-details info-d3">
                                 <AbstractForm></AbstractForm>
@@ -145,7 +158,6 @@
     import Footer from '../Footer'
     import AbstractForm from './AbstractForm'
     import RegisterForm from './RegisterForm'
-    import pdf from 'pdfvuer'
 
     export default {
         name: 'App',
@@ -156,7 +168,7 @@
             }
         },
         components: {
-            Navbar, Footer, AbstractForm, RegisterForm, Loading, pdf
+            Navbar, Footer, AbstractForm, RegisterForm, Loading
         },
         mounted() {
             var infoLink = $(".info-link", "#more-info");
@@ -174,6 +186,8 @@
                 infoLink.removeClass("opened");
                 $(this).addClass("opened");
                 var toggleSectionId = $(this).data('id');
+                $('.info-details').removeClass('show-details');
+                $('.info-d' + toggleSectionId).addClass('show-details');
                 $('.info-details').fadeOut();
                 $('.info-d' + toggleSectionId).fadeIn();
             });
