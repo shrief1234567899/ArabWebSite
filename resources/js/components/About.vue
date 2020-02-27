@@ -1,7 +1,7 @@
 <template>
     <div>
         <Navbar/>
-        <div id="section">
+        <div>
             <div id="header-holder" class="inner-header hosting-page" style="background-color: #2D3439 !important">
                 <div id="page-head" class="container-fluid inner-page">
                     <div class="container">

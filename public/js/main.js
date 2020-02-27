@@ -185,14 +185,14 @@ $(window).on("load", function() {
     });
 
     // More Info Section hover function
-    var infoLink = $(".info-link", "#more-info");
-
-    infoLink.on("mouseover",function(){
-        infoLink.removeClass("opened");
-        $(this).addClass("opened");
-        $(".show-details", "#more-info").removeClass("show-details");
-        $(".info-d"+$(this).data("id"), "#more-info").addClass("show-details");
-    });
+    // var infoLink = $(".info-link", "#more-info");
+    //
+    // infoLink.on("mouseover",function(){
+    //     infoLink.removeClass("opened");
+    //     $(this).addClass("opened");
+    //     $(".show-details", "#more-info").removeClass("show-details");
+    //     $(".info-d"+$(this).data("id"), "#more-info").addClass("show-details");
+    // });
 
     // Servers Marker Location in our servers page
     var locationsList = [["California",97,48,"r"],["Costa Rika",212,31,"l"],["Vancouver",136,161,"r"],["Brazil",303,233,"r"],["Alexandria",149,349,"l"],["Dubai",174,469,"l"],["Delhi",204,605,"r"],["Munech",91,417,"r"],["Barcelona",112,279,"l"],["Moscow",41,554,"r"],["Hong Kong",151,663,"r"],["Melborne",356,688,"l"],["Pulau Ujong",265,578,"l"]];

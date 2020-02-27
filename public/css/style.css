@@ -5224,7 +5224,7 @@ svg.logo text {
     transition: all 0.3s ease;
 }
 
-#more-info .links-holder ul li .info-link:hover, #more-info .links-holder ul li .info-link:focus, #more-info .links-holder ul li .info-link.opened {
+#more-info .links-holder ul li .info-link.opened {
     background-color: #c94328;
     color: white;
     -webkit-box-shadow: 0 12px 67px rgba(0, 0, 0, 0.08);

@@ -24,6 +24,14 @@
 </style>
 <template>
     <div>
+        <loading :active.sync="isLoading"
+                 color="#c94328"
+                 :can-cancel="true"
+                 :height="100"
+                 :width="200"
+                 :opacity="0.6"
+                 :on-cancel="onCancel"
+                 :is-full-page="fullPage"></loading>
         <Navbar></Navbar>
         <div id="header-holder" class="inner-header serverspage-header">
             <div id="page-head" class="container-fluid inner-page">
@@ -43,21 +51,34 @@
                             <div class="head-content">
                                 <h4>Clinical Oncology</h4>
                                 <p>
-                                    Annual Scientific Conference of The Department Of Gastroenterology Hepatology &  Infecious Diseases
-                                    Annual Scientific Conference of The Department Of Gastroenterology Hepatology &  Infecious Diseases
-                                    Annual Scientific Conference of The Department Of Gastroenterology Hepatology &  Infecious Diseases
+                                    Annual Scientific Conference of The Department Of Gastroenterology Hepatology &
+                                    Infecious Diseases
+                                    Annual Scientific Conference of The Department Of Gastroenterology Hepatology &
+                                    Infecious Diseases
+                                    Annual Scientific Conference of The Department Of Gastroenterology Hepatology &
+                                    Infecious Diseases
                                 </p>
                             </div>
                             <hr style="color: white">
                             <div class="row">
-                                <div class="col-md-8">
+                                <div class="col-md-12" style="padding-top:10px">
                                     <div class="address" style="color: white">
-                                        <i class="fas fa-map-marker" style="color: white"></i> Fasel, Giza addressd ad as das das
+                                        <i class="fas fa-map-marker" style="color: white"></i> Fasel, Giza addressd ad
+                                        as das das
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12" style="padding-top:10px">
                                     <div class="phone" style="color: white">
                                         <i class="fas fa-phone" style="color: white"></i> 02333123123131
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12" style="padding-top:10px">
+                                    <div class="day" style="color: white">
+                                        <i class="fas fa-calendar" style="color: white"></i> 22- 28 Feb
                                     </div>
                                 </div>
                             </div>
@@ -90,24 +111,18 @@
                     <div class="col-md-8">
                         <div class="info-details-holder">
                             <div class="info-details info-d1 show-details">
-                                <iframe
-                                    id="program-frame"
-                                    class="mt-3"
-                                    src="https://docs.google.com/gview?url=https://araborganizers.org/UserFiles/ConferencesBrochures/_Brochure_78cb31d4-6682-4f8d-9af0-abd2729fe0ac.pdf&embedded=true"
-                                    width="100%" height="600"
-                                    frameborder="0"
-                                    allowtransparency="true">
-                                </iframe>
+                                <pdf src="https://araborganizers.org/UserFiles/ConferencesBrochures/_Brochure_78cb31d4-6682-4f8d-9af0-abd2729fe0ac.pdf" :page="1">
+                                    <template slot="loading">
+                                        loading content here...
+                                    </template>
+                                </pdf>
                             </div>
                             <div class="info-details info-d2">
-                                <iframe
-                                    id="brochure-frame"
-                                    class="mt-3"
-                                    src="https://docs.google.com/gview?url=https://araborganizers.org/UserFiles/ConferencesBrochures/_Brochure_78cb31d4-6682-4f8d-9af0-abd2729fe0ac.pdf&embedded=true"
-                                    width="100%" height="600"
-                                    frameborder="0"
-                                    allowtransparency="true">
-                                </iframe>
+                                <pdf src="https://araborganizers.org/UserFiles/ConferencesBrochures/_Brochure_78cb31d4-6682-4f8d-9af0-abd2729fe0ac.pdf" :page="1">
+                                    <template slot="loading">
+                                        loading content here...
+                                    </template>
+                                </pdf>
                             </div>
                             <div class="info-details info-d3">
                                 <AbstractForm></AbstractForm>
@@ -124,47 +139,49 @@
     </div>
 </template>
 <script>
+    import Loading from 'vue-loading-overlay';
+    import 'vue-loading-overlay/dist/vue-loading.css';
     import Navbar from '../Navbar'
     import Footer from '../Footer'
     import AbstractForm from './AbstractForm'
     import RegisterForm from './RegisterForm'
+    import pdf from 'pdfvuer'
 
     export default {
         name: 'App',
+        data() {
+            return {
+                isLoading: true,
+                fullPage: true
+            }
+        },
         components: {
-            Navbar, Footer, AbstractForm, RegisterForm
+            Navbar, Footer, AbstractForm, RegisterForm, Loading, pdf
         },
         mounted() {
             var infoLink = $(".info-link", "#more-info");
+            var screen = this;
+            var interval = setInterval(function () {
+                if (document.readyState === 'complete') {
+                    clearInterval(interval);
+                    setTimeout(function () {
+                        screen.isLoading = false;
+                    }, 500);
+                }
+            }, 100);
 
-            infoLink.on("mouseover", function () {
+            infoLink.on("click", function () {
                 infoLink.removeClass("opened");
                 $(this).addClass("opened");
                 var toggleSectionId = $(this).data('id');
-                $('.info-details').hide();
-                $('.info-d' + toggleSectionId).show();
+                $('.info-details').fadeOut();
+                $('.info-d' + toggleSectionId).fadeIn();
             });
-
-            function checkIframeLoaded(framId) {
-                var iframe = document.getElementById(framId);
-                if (iframe) {
-                    var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-
-                    if (iframeDoc.readyState == 'complete') {
-                        frameError(framId);
-                    }
-                }
+        },
+        methods: {
+            onCancel() {
             }
-
-            function frameError(framId) {
-                console.log(framId);
-                var iframe = document.getElementById(framId);
-                iframe.src = iframe.src;
-                window.setTimeout(checkIframeLoaded.bind(null, framId), 500);
-            }
-
-            checkIframeLoaded('program-frame');
-            checkIframeLoaded('brochure-frame');
         }
+
     }
 </script>

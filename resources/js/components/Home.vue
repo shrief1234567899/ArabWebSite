@@ -1,5 +1,13 @@
 <template>
     <div>
+        <loading :active.sync="isLoading"
+                 color="#c94328"
+                 :can-cancel="true"
+                 :height="100"
+                 :width="200"
+                 :opacity="0.6"
+                 :on-cancel="onCancel"
+                 :is-full-page="fullPage"></loading>
         <Navbar></Navbar>
         <agile :nav-buttons="false" :autoplay-speed="5000" :speed="2500" fade="fade"
                pause-on-hover="pause-on-hover"
@@ -22,6 +30,8 @@
     </div>
 </template>
 <script>
+    import Loading from 'vue-loading-overlay';
+    import 'vue-loading-overlay/dist/vue-loading.css';
     import Navbar from './Navbar'
     import Footer from './Footer'
     import Conferences from './conference/Conferences'
@@ -29,10 +39,29 @@
 
     export default {
         name: 'App',
+        data() {
+            return {
+                isLoading: true,
+                fullPage: true
+            }
+        },
         components: {
-            Navbar, Footer, agile: VueAgile,Conferences
+            Navbar, Footer, agile: VueAgile, Conferences, Loading
         },
         mounted() {
+            var screen = this;
+            var interval = setInterval(function() {
+                if(document.readyState === 'complete') {
+                    clearInterval(interval);
+                    setTimeout(function () {
+                        screen.isLoading = false;
+                    }, 500);
+                }
+            }, 100);
+        },
+        methods: {
+            onCancel() {
+            }
         }
     }
 </script>
