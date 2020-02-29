@@ -372,6 +372,7 @@ a, input[type="submit"] {
 	2. Header Styles
 -------------------------------------------------------------------*/
 #header-holder {
+    width: 100%;
     position: relative;
     z-index: 100;
     background-color: #ffffff;
@@ -6127,7 +6128,7 @@ svg.logo text {
 }
 
 #contact-info {
-    background-color: #f9fbff;
+    background-color: #fff;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -6135,7 +6136,6 @@ svg.logo text {
 #contact-info .info-box {
     padding: 50px 40px;
     text-align: left;
-    position: relative;
     background-color: #ffffff;
     border-radius: 20px;
     z-index: 1000;
@@ -6159,11 +6159,11 @@ svg.logo text {
 }
 
 #contact-info .info-box:hover .info-title:before {
-    background-color: #3195ff;
+    background-color: #c94328;
 }
 
 #contact-info .info-box .info-title {
-    color: #3195ff;
+    color: #c94328;
     font-size: 17px;
     font-weight: 600;
     text-transform: uppercase;
@@ -6184,7 +6184,7 @@ svg.logo text {
     border-radius: 50px;
     width: 48px;
     height: 48px;
-    background-color: #332f5c;
+    background-color: #373058;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
@@ -6231,9 +6231,9 @@ svg.logo text {
 
 #extra-info {
     background-repeat: repeat-x;
-    background-image: -webkit-linear-gradient(120deg, #24a7ff, #0a5dd3);
-    background-image: -o-linear-gradient(120deg, #24a7ff, #0a5dd3);
-    background-image: linear-gradient(120deg, #24a7ff, #0a5dd3);
+    background-image: -webkit-linear-gradient(120deg, #373058, #c94328);
+    background-image: -o-linear-gradient(120deg, #373058, #c94328);
+    background-image: linear-gradient(120deg, #373058, #c94328);
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;

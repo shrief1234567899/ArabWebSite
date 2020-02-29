@@ -8,6 +8,7 @@
     .conf-img {
         border-radius: 10%;
         opacity: 0.9;
+        width: 300px;
     }
 
     #more-info {
@@ -40,14 +41,14 @@
                  :on-cancel="onCancel"
                  :is-full-page="fullPage"></loading>
         <Navbar></Navbar>
-        <div id="header-holder" class="inner-header serverspage-header">
-            <div id="page-head" class="container-fluid inner-page">
+        <div id="section">
+            <div id="extra-info" style="text-align:left">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 text-center">
                             <a target="_blank"
                                href="https://araborganizers.org/UserFiles/ConferencesLogos/973c9d1d-5cee-4c77-aa3e-8021f1a961ab.jpg">
-                                <div class="servers-icon">
+                                <div class="">
                                     <img class="conf-img"
                                          src="https://araborganizers.org/UserFiles/ConferencesLogos/973c9d1d-5cee-4c77-aa3e-8021f1a961ab.jpg"
                                          alt="">
@@ -56,7 +57,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="head-content">
-                                <h4>Clinical Oncology</h4>
+                                <h4 style="color:white">Clinical Oncology</h4>
                                 <p>
                                     Annual Scientific Conference of The Department Of Gastroenterology Hepatology &
                                     Infecious Diseases
@@ -94,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div id="more-info" class="container-fluid">
+        <div id="more-info" class="container-fluid" style="padding-top: 20px">
             <div class="col-md-12">
                 <div class="row-title">CLINICAL ONCOLOGY</div>
                 <div class="row-subtitle"></div>

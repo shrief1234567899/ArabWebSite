@@ -11,7 +11,8 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <router-link to="/" class="logo-holder" style="position: absolute;left: 40%;margin-left: -50px !important;display: block;">
+                            <router-link to="/" class="logo-holder"
+                                         style="position: absolute;left: 40%;margin-left: -50px !important;display: block;">
                                 <div class="logo" style="width:300px;height:60px;"></div>
                             </router-link>
                         </div>
@@ -31,22 +32,42 @@
                                 <li class="dropdown">
                                     <a href="#"> {{ $t("message.conf") }} <i class="fas fa-caret-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="about.html">{{ $t("message.curr_conf") }}</a></li>
-                                        <li><a href="blog.html">{{ $t("message.pre_conf") }}</a></li>
+                                        <li>
+                                            <router-link to="/currentConferences">
+                                                {{ $t("message.curr_conf") }}
+                                            </router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/previousConferences">
+                                                {{ $t("message.pre_conf") }}
+                                            </router-link>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
-<!--                                <li><a href="index.html">{{ $t("message.news_events") }}</a></li>-->
+                                <!--                                <li><a href="index.html">{{ $t("message.news_events") }}</a></li>-->
                                 <li><a href="index.html">{{ $t("message.services") }}</a></li>
                                 <li class="dropdown">
                                     <a href="#">{{ $t("message.media_corner") }} <i class="fas fa-caret-down"></i></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="about.html">{{ $t("message.gallery") }}</a></li>
-                                        <li><a href="blog.html">{{ $t("message.videos") }}</a></li>
+                                        <li>
+                                            <router-link to="/media/gallery">
+                                                {{ $t("message.gallery") }}
+                                            </router-link>
+                                        </li>
+                                        <li>
+                                            <router-link to="/media/videos">
+                                                {{ $t("message.videos") }}
+                                            </router-link>
+                                        </li>
                                     </ul>
                                 </li>
-                                <li><a href="contact.html">{{ $t("message.contact_us") }}</a></li>
+                                <li>
+                                    <router-link to="/contact">
+                                        {{ $t("message.contact_us") }}
+                                    </router-link>
+                                </li>
                             </ul>
                         </div>
                     </div>

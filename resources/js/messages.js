@@ -8,10 +8,11 @@ const messages = {
             pre_conf: 'Previous Conferences',
             services: 'Services',
             news_events: 'News & Events',
-            media_corner: 'Media Corner',
+            media_corner: 'Media',
             gallery: 'Gallery',
             videos: 'Videos',
-            contact_us: 'Contact Us'
+            contact_us: 'Contact Us',
+            our_info: 'Our Info'
         }
     },
 };

@@ -17,7 +17,6 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/slick.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/custom.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('css/slider.css')}}">
     <style>
         ::-webkit-scrollbar {
             width: 8px;
