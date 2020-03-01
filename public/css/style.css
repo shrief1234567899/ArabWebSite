@@ -92,7 +92,9 @@ a, input[type="submit"] {
 
 .navbar-full.scrolled {
     background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 4px 30px 0px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 10px 30px 0px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     width: 100%;
     min-height: 40px;
     -webkit-transition: padding 0.3s ease;
@@ -430,6 +432,8 @@ a, input[type="submit"] {
     margin-bottom: 200px;
     z-index: 666;
     width: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
     min-height: 40px;
     -webkit-transition: padding 0.3s ease;
     -moz-transition: padding 0.3s ease;
