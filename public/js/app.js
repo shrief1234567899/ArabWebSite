@@ -44111,12 +44111,13 @@ var render = function() {
               _vm._m(1),
               _vm._v(" "),
               _c("iframe", {
-                staticStyle: { "margin-top": "20px" },
+                staticStyle: { "margin-top": "30px" },
                 attrs: {
                   src:
                     "https://maps.google.com/maps?q=%D8%A7%D9%84%D9%85%D9%86%D8%B8%D9%85%D9%88%D9%86%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8&t=&z=13&ie=UTF8&iwloc=&output=embed",
                   width: "100%",
-                  height: "320"
+                  height: "320",
+                  frameborder: "0"
                 }
               })
             ])
