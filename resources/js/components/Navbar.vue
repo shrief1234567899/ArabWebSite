@@ -47,7 +47,11 @@
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
                                 <!--                                <li><a href="index.html">{{ $t("message.news_events") }}</a></li>-->
-                                <li><a href="index.html">{{ $t("message.services") }}</a></li>
+                                <li>
+                                    <router-link to="/services">
+                                        {{ $t("message.services") }}
+                                    </router-link>
+                                </li>
                                 <li class="dropdown">
                                     <a href="#">{{ $t("message.media_corner") }} <i class="fas fa-caret-down"></i></a>
                                     <ul class="dropdown-menu">

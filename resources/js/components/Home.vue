@@ -1,13 +1,5 @@
 <template>
     <div>
-        <loading :active.sync="isLoading"
-                 color="#c94328"
-                 :can-cancel="true"
-                 :height="100"
-                 :width="200"
-                 :opacity="0.6"
-                 :on-cancel="onCancel"
-                 :is-full-page="fullPage"></loading>
         <Navbar></Navbar>
         <agile :nav-buttons="false" :autoplay-speed="5000" :speed="2500" fade="fade"
                pause-on-hover="pause-on-hover"
@@ -24,45 +16,33 @@
                 <div class="row-title">{{ $t("message.curr_conf") }}</div>
                 <div class="row-subtitle"></div>
             </div>
-            <Conferences></Conferences>
+            <Conferences type="get-recent-conferences"></Conferences>
         </div>
+        <Heroes></Heroes>
+        <TopServices></TopServices>
         <Footer></Footer>
     </div>
 </template>
 <script>
     import '../../../public/css/slider.css';
-    import Loading from 'vue-loading-overlay';
-    import 'vue-loading-overlay/dist/vue-loading.css';
     import Navbar from './Navbar'
     import Footer from './Footer'
+    import Heroes from './Heroes'
+    import TopServices from './TopServices'
     import Conferences from './conference/Conferences'
     import {VueAgile} from 'vue-agile'
 
     export default {
-        name: 'App',
+        name: 'Home',
         data() {
-            return {
-                isLoading: true,
-                fullPage: true
-            }
+            return {}
         },
         components: {
-            Navbar, Footer, agile: VueAgile, Conferences, Loading
+            TopServices,
+            Navbar, Footer, agile: VueAgile, Conferences, Heroes
         },
         mounted() {
-            var screen = this;
-            var interval = setInterval(function() {
-                if(document.readyState === 'complete') {
-                    clearInterval(interval);
-                    setTimeout(function () {
-                        screen.isLoading = false;
-                    }, 500);
-                }
-            }, 100);
         },
-        methods: {
-            onCancel() {
-            }
-        }
+        methods: {}
     }
 </script>

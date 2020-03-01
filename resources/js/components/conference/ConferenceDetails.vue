@@ -25,7 +25,7 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
-    .iframe{
+    .iframe {
         border-radius: 10px;
     }
 
@@ -41,52 +41,40 @@
                  :on-cancel="onCancel"
                  :is-full-page="fullPage"></loading>
         <Navbar></Navbar>
-        <div id="section">
-            <div id="extra-info" style="text-align:left">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 text-center">
-                            <a target="_blank"
-                               href="https://araborganizers.org/UserFiles/ConferencesLogos/973c9d1d-5cee-4c77-aa3e-8021f1a961ab.jpg">
-                                <div class="">
-                                    <img class="conf-img"
-                                         src="https://araborganizers.org/UserFiles/ConferencesLogos/973c9d1d-5cee-4c77-aa3e-8021f1a961ab.jpg"
-                                         alt="">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="head-content">
-                                <h4 style="color:white">Clinical Oncology</h4>
-                                <p>
-                                    Annual Scientific Conference of The Department Of Gastroenterology Hepatology &
-                                    Infecious Diseases
-                                    Annual Scientific Conference of The Department Of Gastroenterology Hepatology &
-                                    Infecious Diseases
-                                    Annual Scientific Conference of The Department Of Gastroenterology Hepatology &
-                                    Infecious Diseases
-                                </p>
+        <div v-if="conference">
+            <div id="section">
+                <div id="extra-info" style="text-align:left">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 text-center">
+                                <a target="_blank" :href="conference.image">
+                                    <div class="">
+                                        <img class="conf-img" :src="conference.image" alt="">
+                                    </div>
+                                </a>
                             </div>
-                            <hr style="color: white">
-                            <div class="row">
-                                <div class="col-md-12" style="padding-top:10px">
-                                    <div class="address" style="color: white">
-                                        <i class="fas fa-map-marker" style="color: white"></i> Fasel, Giza addressd ad
-                                        as das das
+                            <div class="col-md-6">
+                                <div class="head-content">
+                                    <h4 style="color:white">{{conference.name}}</h4>
+                                    <p>
+                                        {{conference.description}}
+                                    </p>
+                                </div>
+                                <hr style="color: white">
+                                <div class="row">
+                                    <div class="col-md-12" style="padding-top:10px">
+                                        <div class="address" style="color: white">
+                                            <i class="fas fa-map-marker" style="color: white"></i>
+                                            {{conference.event_place}}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12" style="padding-top:10px">
-                                    <div class="phone" style="color: white">
-                                        <i class="fas fa-phone" style="color: white"></i> 02333123123131
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12" style="padding-top:10px">
-                                    <div class="day" style="color: white">
-                                        <i class="fas fa-calendar" style="color: white"></i> 22- 28 Feb
+                                <div class="row">
+                                    <div class="col-md-12" style="padding-top:10px">
+                                        <div class="day" style="color: white">
+                                            <i class="fas fa-calendar" style="color: white"></i>
+                                            {{conference.start_date}} - {{conference.end_date}}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -94,55 +82,57 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="more-info" class="container-fluid" style="padding-top: 20px">
-            <div class="col-md-12">
-                <div class="row-title">CLINICAL ONCOLOGY</div>
-                <div class="row-subtitle"></div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="links-holder">
-                            <ul>
-                                <li>
-                                    <div class="info-link opened" data-id="1">Program</div>
-                                </li>
-                                <li>
-                                    <div class="info-link" data-id="2">Brochure</div>
-                                </li>
-                                <li>
-                                    <div class="info-link" data-id="3">Abstract</div>
-                                </li>
-                                <li>
-                                    <div class="info-link" data-id="4">Registration</div>
-                                </li>
-                            </ul>
+            <div id="more-info" class="container-fluid" style="padding-top: 20px">
+                <div class="col-md-12">
+                    <div class="row-title">{{conference.name}}</div>
+                    <div class="row-subtitle"></div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="links-holder">
+                                <ul>
+                                    <li v-if="conference.program_link">
+                                        <div class="info-link opened" data-id="1">Program</div>
+                                    </li>
+                                    <li v-if="conference.brochure_link">
+                                        <div class="info-link" data-id="2">Brochure</div>
+                                    </li>
+                                    <li>
+                                        <div class="info-link" data-id="3">Abstract</div>
+                                    </li>
+                                    <li>
+                                        <div class="info-link" data-id="4">Registration</div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="info-details-holder">
-                            <div class="info-details info-d1 show-details">
-                                <object class="iframe" data="https://araborganizers.org/UserFiles/ConferencesBrochures/_Brochure_78cb31d4-6682-4f8d-9af0-abd2729fe0ac.pdf"
-                                        type="application/pdf"
-                                        width="100%" height="600">
-                                    <embed src="https://araborganizers.org/UserFiles/ConferencesBrochures/_Brochure_78cb31d4-6682-4f8d-9af0-abd2729fe0ac.pdf"
-                                           type="application/pdf"/>
-                                </object>
-                            </div>
-                            <div class="info-details info-d2">
-                                <object class="iframe" data="https://araborganizers.org/UserFiles/ConferencesBrochures/_Brochure_78cb31d4-6682-4f8d-9af0-abd2729fe0ac.pdf"
-                                        type="application/pdf"
-                                        width="100%" height="600">
-                                    <embed src="https://araborganizers.org/UserFiles/ConferencesBrochures/_Brochure_78cb31d4-6682-4f8d-9af0-abd2729fe0ac.pdf"
-                                           type="application/pdf"/>
-                                </object>
-                            </div>
-                            <div class="info-details info-d3">
-                                <AbstractForm></AbstractForm>
-                            </div>
-                            <div class="info-details info-d4">
-                                <RegisterForm></RegisterForm>
+                        <div class="col-md-9">
+                            <div class="info-details-holder">
+                                <div class="info-details info-d1" v-bind:class="{'show-details' : conference.program_link}">
+                                    <object class="iframe"
+                                            :data="conference.program_link"
+                                            type="application/pdf"
+                                            width="100%" height="600">
+                                        <embed
+                                            :src="conference.program_link"
+                                            type="application/pdf"/>
+                                    </object>
+                                </div>
+                                <div class="info-details info-d2" v-bind:class="{'show-details' : !conference.program_link && conference.brochure_link}">
+                                    <object class="iframe"
+                                            :data="conference.brochure_link"
+                                            type="application/pdf"
+                                            width="100%" height="600">
+                                        <embed :src="conference.brochure_link" type="application/pdf"/>
+                                    </object>
+                                </div>
+                                <div class="info-details info-d3" v-bind:class="{'show-details' : !conference.program_link && !conference.brochure_link}">
+                                    <AbstractForm></AbstractForm>
+                                </div>
+                                <div class="info-details info-d4">
+                                    <RegisterForm></RegisterForm>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -165,25 +155,18 @@
         data() {
             return {
                 isLoading: true,
-                fullPage: true
+                fullPage: true,
+                conference: null
             }
         },
         components: {
             Navbar, Footer, AbstractForm, RegisterForm, Loading
         },
         mounted() {
+            this.getConferencesDetails();
             var infoLink = $(".info-link", "#more-info");
-            var screen = this;
-            var interval = setInterval(function () {
-                if (document.readyState === 'complete') {
-                    clearInterval(interval);
-                    setTimeout(function () {
-                        screen.isLoading = false;
-                    }, 500);
-                }
-            }, 100);
             $('.info-details').fadeOut();
-            $('.info-d1').fadeIn();
+            $('.show-details').fadeIn();
             infoLink.on("click", function () {
                 infoLink.removeClass("opened");
                 $(this).addClass("opened");
@@ -196,7 +179,20 @@
         },
         methods: {
             onCancel() {
-            }
+            },
+            getConferencesDetails: function () {
+                let screen = this;
+                axios
+                    .get('http://104.248.161.120/rms/api/v2/terms-and-conditions')
+                    .then(response => {
+                        console.log(response);
+                        screen.isLoading = false;
+                    })
+                    .catch(error => {
+                        console.log(this.$route.params.id);
+                        screen.isLoading = false;
+                    })
+            },
         }
 
     }

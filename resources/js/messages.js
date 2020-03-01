@@ -12,7 +12,9 @@ const messages = {
             gallery: 'Gallery',
             videos: 'Videos',
             contact_us: 'Contact Us',
-            our_info: 'Our Info'
+            our_info: 'Our Info',
+            heroes: 'Heroes',
+            top_services: 'Top Services'
         }
     },
 };

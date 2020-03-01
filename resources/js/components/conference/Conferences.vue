@@ -8,68 +8,76 @@
 </style>
 <template>
     <div id="articles" class="container-fluid">
+        <loading :active.sync="isLoading"
+                 color="#c94328"
+                 :can-cancel="true"
+                 :height="100"
+                 :width="200"
+                 :opacity="0.6"
+                 :on-cancel="onCancel"
+                 :is-full-page="fullPage"></loading>
         <div class="container">
             <div class="row">
-                <router-link to="conference/1">
-                    <div class="col-sm-6 col-md-4">
-                        <div class="article-summary">
-                            <div class="article-img">
-                                <img
-                                    src="https://araborganizers.org/UserFiles/ConferencesLogos/947a4629-704a-4aa1-beea-17f0e9acbed2.jpg"
-                                    alt="">
-                            </div>
-                            <div class="article-details">
-                                <div class="article-title"><a href="#">Hemo-Alex 2002</a></div>
-                                <div class="article-text">
-                                    The Egyptian Society of Hemato-Oncology and Bone Marrow Transplantation
+                <div v-for="conference in conferences">
+                    <router-link to="conference/1">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="article-summary">
+                                <div class="article-img">
+                                    <img :src="conference.image" alt="">
+                                </div>
+                                <div class="article-details">
+                                    <div class="article-title"><a href="#">{{conference.name}}</a></div>
+                                    <div class="article-text">
+                                        {{conference.description}}
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </router-link>
-                <router-link to="conference/2">
-                    <div class="col-sm-6 col-md-4">
-                        <div class="article-summary">
-                            <div class="article-img">
-                                <img
-                                    src="https://araborganizers.org/UserFiles/ConferencesLogos/973c9d1d-5cee-4c77-aa3e-8021f1a961ab.jpg"
-                                    alt="">
-                            </div>
-                            <div class="article-details">
-                                <div class="article-title"><a href="#">Hemo-Alex 2002</a></div>
-                                <div class="article-text">
-                                    The Egyptian Society of Hemato-Oncology and Bone Marrow Transplantation
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </router-link>
-                <router-link to="conference/3">
-                    <div class="col-sm-6 col-md-4">
-                        <div class="article-summary">
-                            <div class="article-img">
-                                <img
-                                    src="https://araborganizers.org/UserFiles/ConferencesLogos/947a4629-704a-4aa1-beea-17f0e9acbed2.jpg"
-                                    alt="">
-                            </div>
-                            <div class="article-details">
-                                <div class="article-title"><a href="#">Hemo-Alex 2002</a></div>
-                                <div class="article-text">
-                                    The Egyptian Society of Hemato-Oncology and Bone Marrow Transplantation adahsdhjagsdhsagdjgsajdgsagdjagjdgjsagdgasjdg
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </router-link>
+                    </router-link>
+                </div>
             </div>
         </div>
     </div>
 </template>
 <script>
+    import Loading from 'vue-loading-overlay';
+    import 'vue-loading-overlay/dist/vue-loading.css';
+
     export default {
-        name: 'App',
-        components: {},
+        name: 'Conferences',
+        components: {Loading},
+        data() {
+            return {
+                isLoading: true,
+                fullPage: true,
+                conferences: []
+            }
+        },
+        props: {
+            type: String
+        },
         mounted() {
+            this.getConferences();
+        },
+        methods: {
+            getConferences: function () {
+                let screen = this;
+                axios
+                    .get('https://araborganizers-system.com/api/' + screen.type)
+                    .then(response => {
+                        for(var i=0; i<response.data.data.length ; i++){
+                            response.data.data[i].image = 'https://araborganizers-system.com' + response.data.data[i].image;
+                        }
+                        screen.conferences = response.data.data;
+                        screen.isLoading = false;
+                    })
+                    .catch(error => {
+                        console.log(error);
+                        screen.isLoading = false;
+                    })
+            },
+            onCancel() {
+            },
         }
     }
 </script>

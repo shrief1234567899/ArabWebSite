@@ -76,7 +76,9 @@
                             </div>
                         </div>
                     </div>
-                    <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zqYkhyEfiH7Q.kJtqi4Bjr2Y0&amp;z=18" width="100%" height="320" style="margin-top:20px"></iframe>
+                    <iframe
+                        src="https://maps.google.com/maps?q=%D8%A7%D9%84%D9%85%D9%86%D8%B8%D9%85%D9%88%D9%86%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="320" style="margin-top:20px"></iframe>
                 </div>
             </div>
         </div>

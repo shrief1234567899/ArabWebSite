@@ -91,10 +91,11 @@ a, input[type="submit"] {
 
 
 .navbar-full.scrolled {
-    /*background: linear-gradient(-90deg, #fff 0%, #fff 40%, #fff 100%) !important;*/
     background-color: rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 24px 0px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 4px 30px 0px;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     min-height: 40px;
     -webkit-transition: padding 0.3s ease;
     -moz-transition: padding 0.3s ease;
@@ -1973,7 +1974,7 @@ svg.logo text {
 }
 
 #pricing .bg-color {
-    background-color: #eaeff9;
+    background-color: #f1f1f1;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -2008,9 +2009,9 @@ svg.logo text {
 
 .pricing-box .pricing-content {
     border: 1px solid rgba(224, 224, 232, 0);
-    background-color: #fcfcfd;
+    background-color: #fafafa;
     -webkit-box-shadow: -1px 8px 18px rgba(0, 0, 0, 0.08);
-    box-shadow: -1px 8px 18px rgba(0, 0, 0, 0.08);
+    box-shadow: -1px 8px 22px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
     position: relative;
     padding: 65px 27px 27px 27px;
@@ -2020,11 +2021,11 @@ svg.logo text {
 
 .pricing-box .pricing-content .pricing-icon {
     position: absolute;
-    width: 88px;
-    height: 88px;
-    left: 50%;
+    width: 150px;
+    height: 150px;
+    left: 40%;
     margin-left: -44px;
-    top: -44px;
+    top: -100px;
     border-radius: 200px;
     overflow: hidden;
     z-index: 100;
@@ -2079,7 +2080,7 @@ svg.logo text {
 }
 
 .pricing-box .pricing-content .pricing-price {
-    font-size: 35px;
+    font-size: 26px;
     color: #a3a3a3;
 }
 
@@ -3114,7 +3115,7 @@ svg.logo text {
 .pricing-box.pricing-unity .pricing-content .pricing-link a {
     position: relative;
     color: #fff;
-    background-color: #3195ff;
+    background-color: #373058;
     width: 100%;
     margin: 0;
     -webkit-transform: scale(1);
@@ -3134,7 +3135,7 @@ svg.logo text {
     -moz-transform: scale(0.98);
     -ms-transform: scale(0.98);
     transform: scale(0.98);
-    background-color: #1888ff;
+    background-color: #c94328;
 }
 
 .pricing-box-horizontal-holder {
