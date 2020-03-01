@@ -103,15 +103,10 @@
             Navbar, Footer, Loading
         },
         mounted() {
-            var screen = this;
-            var interval = setInterval(function () {
-                if (document.readyState === 'complete') {
-                    clearInterval(interval);
-                    setTimeout(function () {
-                        screen.isLoading = false;
-                    }, 500);
-                }
-            }, 100);
+            let screen = this;
+            setTimeout(function () {
+                screen.isLoading = false;
+            }, 500);
         },
         methods: {
             onCancel() {
