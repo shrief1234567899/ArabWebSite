@@ -25,7 +25,7 @@
                                 <div class="article-img">
                                     <img :src="conference.image" alt="">
                                 </div>
-                                <div class="article-details">
+                                <div class="article-details" style="height:200px">
                                     <div class="article-title"><a href="#">{{conference.name}}</a></div>
                                     <div class="article-text">
                                         {{conference.description}}
@@ -65,7 +65,7 @@
                 axios
                     .get('https://araborganizers-system.com/api/' + screen.type)
                     .then(response => {
-                        for(var i=0; i<response.data.data.length ; i++){
+                        for (var i = 0; i < response.data.data.length; i++) {
                             response.data.data[i].image = 'https://araborganizers-system.com' + response.data.data[i].image;
                         }
                         screen.conferences = response.data.data;

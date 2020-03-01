@@ -3941,7 +3941,7 @@ svg.logo text {
 
 #more-features .mfeature-box .mfeature-title {
     color: #4a4a4a;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 15px;
     -webkit-transition: all 0.3s ease;
@@ -3950,7 +3950,7 @@ svg.logo text {
 
 #more-features .mfeature-box .mfeature-details {
     color: #707070;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 300;
     opacity: 0.7;
     -webkit-transition: all 0.3s ease;
@@ -3958,7 +3958,7 @@ svg.logo text {
 }
 
 #more-features .mfeature-box:hover {
-    background-color: #3195ff;
+    background-color: #c94328;
     border: 1px solid #eeeef4;
     -webkit-box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
@@ -5685,7 +5685,6 @@ svg.logo text {
 #articles {
     background-color: #ffffff;
     padding-top: 50px;
-    padding-bottom: 50px;
     text-align: center;
 }
 

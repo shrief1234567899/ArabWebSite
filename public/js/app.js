@@ -45890,21 +45890,28 @@ var render = function() {
                         _c("img", { attrs: { src: conference.image, alt: "" } })
                       ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "article-details" }, [
-                        _c("div", { staticClass: "article-title" }, [
-                          _c("a", { attrs: { href: "#" } }, [
-                            _vm._v(_vm._s(conference.name))
+                      _c(
+                        "div",
+                        {
+                          staticClass: "article-details",
+                          staticStyle: { height: "200px" }
+                        },
+                        [
+                          _c("div", { staticClass: "article-title" }, [
+                            _c("a", { attrs: { href: "#" } }, [
+                              _vm._v(_vm._s(conference.name))
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "article-text" }, [
+                            _vm._v(
+                              "\n                                    " +
+                                _vm._s(conference.description) +
+                                "\n                                "
+                            )
                           ])
-                        ]),
-                        _vm._v(" "),
-                        _c("div", { staticClass: "article-text" }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(conference.description) +
-                              "\n                                "
-                          )
-                        ])
-                      ])
+                        ]
+                      )
                     ])
                   ])
                 ])
