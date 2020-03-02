@@ -2,6 +2,9 @@
     img{
         border-radius: 7px;
     }
+    .mfeature-box{
+        min-height: 400px;
+    }
 </style>
 <template>
     <div>
