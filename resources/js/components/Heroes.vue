@@ -1,3 +1,8 @@
+<style>
+    .pricing-content{
+        min-height: 400px;
+    }
+</style>
 <template>
     <div>
         <div id="pricing" class="container-fluid">
@@ -14,12 +19,14 @@
                         <div class="pricing-box pricing-unity pricing-color1">
                             <div class="pricing-content">
                                 <div class="pricing-icon">
-                                    <img src="images/service-icon1.svg" alt="">
+                                    <img src="/images/heroes/gamal.jpeg" alt="">
                                 </div>
-                                <div class="pricing-title">CEO</div>
-                                <div class="pricing-price">Ibrahim Farouk</div>
+                                <div class="pricing-title">PROFESSOR</div>
+                                <div class="pricing-price">Gamal Esmat</div>
                                 <div class="pricing-details">
-                                    <p>Is the most senior corporate, executive, or administrative officer in charge of managing an organization.</p>
+                                    <p>
+                                        Professor of Hepatology and Endemic Medicine – Cairo University.<br><br>
+                                    </p>
                                 </div>
                                 <div class="pricing-link">
                                     <a class="ybtn" target="_blank" href="/about">More</a>
@@ -57,7 +64,8 @@
                                         He is the director of Medical research center of Ain Shams</p>
                                 </div>
                                 <div class="pricing-link">
-                                    <a class="ybtn" target="_blank" href="https://www.bgicc.net/page/p/Professor-Hesham-Elghazaly">More</a>
+                                    <a class="ybtn" target="_blank"
+                                       href="https://www.bgicc.net/page/p/Professor-Hesham-Elghazaly">More</a>
                                 </div>
                             </div>
                         </div>
@@ -71,13 +79,9 @@
 <script>
 
     export default {
-        components: {
-
-        },
+        components: {},
         data() {
-            return {
-
-            }
+            return {}
         }
     }
 </script>
