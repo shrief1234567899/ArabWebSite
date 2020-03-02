@@ -8,6 +8,7 @@ import messages from '@/js/messages.js';
 window.Vue = require('vue');
 window.JQuery = require('jquery');
 Vue.use(VueInternationalization);
+Vue.use(require('vue-moment'));
 
 const i18n = new VueInternationalization({
     locale: 'en',

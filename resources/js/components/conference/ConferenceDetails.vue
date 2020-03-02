@@ -9,6 +9,16 @@
         border-radius: 10%;
         opacity: 0.9;
         width: 300px;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .conf-img:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        opacity: 1;
     }
 
     #more-info {
@@ -46,14 +56,14 @@
                 <div id="extra-info" style="text-align:left">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6 text-center">
+                            <div class="col-md-4 text-center">
                                 <a target="_blank" :href="conference.image">
                                     <div class="">
                                         <img class="conf-img" :src="conference.image" alt="">
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-8">
                                 <div class="head-content">
                                     <h4 style="color:white">{{conference.name}}</h4>
                                     <p>
@@ -65,7 +75,7 @@
                                     <div class="col-md-12" style="padding-top:10px">
                                         <div class="address" style="color: white">
                                             <i class="fas fa-map-marker" style="color: white"></i>
-                                            {{conference.event_place}}
+                                            {{conference.address}}
                                         </div>
                                     </div>
                                 </div>
@@ -73,7 +83,7 @@
                                     <div class="col-md-12" style="padding-top:10px">
                                         <div class="day" style="color: white">
                                             <i class="fas fa-calendar" style="color: white"></i>
-                                            {{conference.start_date}} - {{conference.end_date}}
+                                            <span>{{ conference.start_date | moment("dddd, MMMM Do") }} - {{ conference.end_date | moment("dddd, MMMM Do") }}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -96,20 +106,26 @@
                                         <div class="info-link opened" data-id="1">Program</div>
                                     </li>
                                     <li v-if="conference.brochure_link">
-                                        <div class="info-link" data-id="2">Brochure</div>
+                                        <div class="info-link" v-bind:class="{'opened' : !conference.program_link}"
+                                             data-id="2">Brochure
+                                        </div>
                                     </li>
                                     <li>
-                                        <div class="info-link" data-id="3">Abstract</div>
+                                        <div class="info-link"
+                                             v-bind:class="{'opened' : !conference.program_link && !conference.brochure_link}"
+                                             data-id="3">Abstract
+                                        </div>
                                     </li>
                                     <li>
-                                        <div class="info-link" data-id="4">Registration</div>
+                                        <div class="info-link" data-id="4" v-if="conference.open">Registration</div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-9">
                             <div class="info-details-holder">
-                                <div class="info-details info-d1" v-bind:class="{'show-details' : conference.program_link}">
+                                <div class="info-details info-d1" v-if="conference.program_link"
+                                     v-bind:class="{'show-details' : conference.program_link}">
                                     <object class="iframe"
                                             :data="conference.program_link"
                                             type="application/pdf"
@@ -119,7 +135,8 @@
                                             type="application/pdf"/>
                                     </object>
                                 </div>
-                                <div class="info-details info-d2" v-bind:class="{'show-details' : !conference.program_link && conference.brochure_link}">
+                                <div class="info-details info-d2" v-if="conference.brochure_link"
+                                     v-bind:class="{'show-details' : !conference.program_link && conference.brochure_link}">
                                     <object class="iframe"
                                             :data="conference.brochure_link"
                                             type="application/pdf"
@@ -127,10 +144,11 @@
                                         <embed :src="conference.brochure_link" type="application/pdf"/>
                                     </object>
                                 </div>
-                                <div class="info-details info-d3" v-bind:class="{'show-details' : !conference.program_link && !conference.brochure_link}">
+                                <div class="info-details info-d3"
+                                     v-bind:class="{'show-details' : !conference.program_link && !conference.brochure_link}">
                                     <AbstractForm></AbstractForm>
                                 </div>
-                                <div class="info-details info-d4">
+                                <div class="info-details info-d4" v-if="conference.open">
                                     <RegisterForm></RegisterForm>
                                 </div>
                             </div>
@@ -139,7 +157,7 @@
                 </div>
             </div>
         </div>
-        <Footer></Footer>
+        <Footer v-if="!isLoading"></Footer>
     </div>
 </template>
 <script>
@@ -164,17 +182,16 @@
         },
         mounted() {
             this.getConferencesDetails();
-            var infoLink = $(".info-link", "#more-info");
-            $('.info-details').fadeOut();
-            $('.show-details').fadeIn();
-            infoLink.on("click", function () {
-                infoLink.removeClass("opened");
-                $(this).addClass("opened");
-                var toggleSectionId = $(this).data('id');
-                $('.info-details').removeClass('show-details');
-                $('.info-d' + toggleSectionId).addClass('show-details');
-                $('.info-details').fadeOut();
-                $('.info-d' + toggleSectionId).fadeIn();
+            $(window).click('.info-link', function (e) {
+                if ($(event.target).hasClass('info-link')) {
+                    $('.info-link').removeClass("opened");
+                    $(event.target).addClass("opened");
+                    var toggleSectionId = $(event.target).data('id');
+                    $('.info-details').removeClass('show-details');
+                    $('.info-d' + toggleSectionId).addClass('show-details');
+                    $('.info-details').hide();
+                    $('.info-d' + toggleSectionId).show();
+                }
             });
         },
         methods: {
@@ -183,13 +200,21 @@
             getConferencesDetails: function () {
                 let screen = this;
                 axios
-                    .get('http://104.248.161.120/rms/api/v2/terms-and-conditions')
+                    .get('https://araborganizers-system.com/api/get-single-conference?id=' + this.$route.params.id)
                     .then(response => {
-                        console.log(response);
+                        if (typeof response.data.data != "undefined") {
+                            response.data.data.image = 'https://araborganizers-system.com' + response.data.data.image;
+                            if (response.data.data.brochure_link)
+                                response.data.data.brochure_link = 'https://araborganizers-system.com' + response.data.data.brochure_link;
+                            this.conference = response.data.data;
+                            Vue.nextTick(function () {
+                                $('.info-details').hide();
+                                $('.show-details').show();
+                            })
+                        }
                         screen.isLoading = false;
                     })
                     .catch(error => {
-                        console.log(this.$route.params.id);
                         screen.isLoading = false;
                     })
             },
