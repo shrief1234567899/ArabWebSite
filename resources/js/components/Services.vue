@@ -1,3 +1,9 @@
+<style>
+    #ifeatures .feature-box {
+        margin-bottom: 0px !important;
+        padding: 10px 10px !important;
+    }
+</style>
 <template>
     <div>
         <loading :active.sync="isLoading"
@@ -34,122 +40,150 @@
                 </div>
             </div>
         </div>
-        <div id="team" class="container-fluid">
+        <div id="ifeatures" class="container-fluid">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="row-title">Our Services</div>
+                        <div class="row-title">What makes us special?</div>
                         <div class="row-subtitle"></div>
                     </div>
                 </div>
-                <div class="row team-holder">
+                <div class="row">
                     <div class="col-sm-6 col-md-3">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/usher.png" alt=""></div>
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <img src="images/services/usher.png" alt="">
                             </div>
-                            <div class="person-name">Chris Walker</div>
-                            <div class="person-title">CEO &amp; CO-Founder</div>
-                            <div class="person-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            <div class="feature-title">Ushering Team</div>
+                            <div class="feature-details">Professional Ushering Team has experience to deal with attendees</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <img src="images/services/nametag.png" alt="">
+                            </div>
+                            <div class="feature-title">Name tags</div>
+                            <div class="feature-details">Printing name tags with professional tools.</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <img src="images/services/certificate.png" alt="">
+                            </div>
+                            <div class="feature-title">Certificates</div>
+                            <div class="feature-details">Printing name tags with professional tools.</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <img src="images/services/onlineRegistration.png" alt="">
+                            </div>
+                            <div class="feature-title">Online Registration</div>
+                            <div class="feature-details">We provide online registration wit emails and sms notifications</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <img src="images/services/kiosk.png" alt="">
+                            </div>
+                            <div class="feature-title">Kiosk Registration</div>
+                            <div class="feature-details">
+                                Integrated device provides
+                                simple ui interface to facilitate attendee interaction.
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/team2.jpg" alt=""></div>
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <img src="images/services/tracking.png" alt="">
                             </div>
-                            <div class="person-name">Jane Donald</div>
-                            <div class="person-title">Client service</div>
-                            <div class="person-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/team3.jpg" alt=""></div>
-                            </div>
-                            <div class="person-name">David Adams</div>
-                            <div class="person-title">Server Admin</div>
-                            <div class="person-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            <div class="feature-title">Attendee Tracking</div>
+                            <div class="feature-details">
+                                Using attendee <code>QR-code</code> you can know all presented services
+                                for this attendee.
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/team4.jpg" alt=""></div>
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <img src="images/services/cme.png" height="104" alt="">
                             </div>
-                            <div class="person-name">Rose Masso</div>
-                            <div class="person-title">Quality Assurance</div>
-                            <div class="person-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            <div class="feature-title">CME Calculation</div>
+                            <div class="feature-details">
+                                Provides <code>CME</code> calculation for subscribed CME attendees.
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/team5.jpg" alt=""></div>
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <img src="images/services/cme-logs.png" alt="">
                             </div>
-                            <div class="person-name">Travis Walker</div>
-                            <div class="person-title">CO-Founder</div>
-                            <div class="person-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            <div class="feature-title">CME Logs</div>
+                            <div class="feature-details">
+                                Logging for <code>CME</code> hours for each attendee.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <img src="images/services/payment.png" alt="">
+                            </div>
+                            <div class="feature-title">Online Payment</div>
+                            <div class="feature-details">
+                                We provides easy secured payment gateway for paid conferences.
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/team6.jpg" alt=""></div>
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <img src="images/services/statistics.png" alt="">
                             </div>
-                            <div class="person-name">Bella Vayner</div>
-                            <div class="person-title">Client service</div>
-                            <div class="person-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/team7.jpg" alt=""></div>
-                            </div>
-                            <div class="person-name">Mary Wilson</div>
-                            <div class="person-title">Client service</div>
-                            <div class="person-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            <div class="feature-title">Statistics</div>
+                            <div class="feature-details">
+                               Our system provides full statistics about specialities of attendees,
+                                online and onsite registration, Halls, speakers and sessions.
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/team8.jpg" alt=""></div>
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <img src="images/services/marketing.png" height="104" alt="">
                             </div>
-                            <div class="person-name">Craig Davids</div>
-                            <div class="person-title">Web Master</div>
-                            <div class="person-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            <div class="feature-title">CME Calculation</div>
+                            <div class="feature-details">
+                                Provides <code>CME</code> calculation for subscribed CME attendees.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="feature-box">
+                            <div class="feature-icon">
+                                <img src="images/services/cme-logs.png" alt="">
+                            </div>
+                            <div class="feature-title">CME Logs</div>
+                            <div class="feature-details">
+                                Logging for <code>CME</code> hours for each attendee.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <Footer/>
     </div>
 </template>
 

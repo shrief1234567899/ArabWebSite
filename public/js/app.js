@@ -2717,6 +2717,40 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -8030,6 +8064,25 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 // module
 exports.push([module.i, "\nh4 {\n    line-height: 30px\n}\n#header-holder.inner-header:before {\n    background: none !important;\n}\ndiv::-webkit-scrollbar {\n    width: 5px;\n}\ndiv::-webkit-scrollbar-track {\n    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);\n    border-radius: 10px;\n}\ndiv::-webkit-scrollbar-thumb {\n    border-radius: 10px;\n    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);\n}\n.feature-title-holder {\n    margin-bottom: 30px !important;\n}\n.highlighted-title {\n    color: #C94328 !important;\n}\n.featured-img {\n    vertical-align: text-top;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Services.vue?vue&type=style&index=0&lang=css&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Services.vue?vue&type=style&index=0&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#ifeatures .feature-box {\n    margin-bottom: 0px !important;\n    padding: 10px 10px !important;\n}\n", ""]);
 
 // exports
 
@@ -39057,6 +39110,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Services.vue?vue&type=style&index=0&lang=css&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Services.vue?vue&type=style&index=0&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Services.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Services.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/TopServices.vue?vue&type=style&index=0&lang=css&":
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/TopServices.vue?vue&type=style&index=0&lang=css& ***!
@@ -45518,7 +45601,9 @@ var render = function() {
         )
       ]),
       _vm._v(" "),
-      _vm._m(1)
+      _vm._m(1),
+      _vm._v(" "),
+      _c("Footer")
     ],
     1
   )
@@ -45559,238 +45644,273 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "container-fluid", attrs: { id: "team" } },
+      { staticClass: "container-fluid", attrs: { id: "ifeatures" } },
       [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-xs-12" }, [
-              _c("div", { staticClass: "row-title" }, [_vm._v("Our Services")]),
+              _c("div", { staticClass: "row-title" }, [
+                _vm._v("What makes us special?")
+              ]),
               _vm._v(" "),
               _c("div", { staticClass: "row-subtitle" })
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "row team-holder" }, [
+          _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-sm-6 col-md-3" }, [
-              _c("div", { staticClass: "person-box" }, [
-                _c("div", { staticClass: "person-icon" }, [
-                  _c("div", { staticClass: "person-img" }, [
-                    _c("img", { attrs: { src: "images/usher.png", alt: "" } })
-                  ])
+              _c("div", { staticClass: "feature-box" }, [
+                _c("div", { staticClass: "feature-icon" }, [
+                  _c("img", {
+                    attrs: { src: "images/services/usher.png", alt: "" }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-name" }, [
-                  _vm._v("Chris Walker")
+                _c("div", { staticClass: "feature-title" }, [
+                  _vm._v("Ushering Team")
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-title" }, [
-                  _vm._v("CEO & CO-Founder")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "person-social" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-twitter" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-instagram" })
-                  ])
+                _c("div", { staticClass: "feature-details" }, [
+                  _vm._v(
+                    "Professional Ushering Team has experience to deal with attendees"
+                  )
                 ])
               ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-sm-6 col-md-3" }, [
-              _c("div", { staticClass: "person-box" }, [
-                _c("div", { staticClass: "person-icon" }, [
-                  _c("div", { staticClass: "person-img" }, [
-                    _c("img", { attrs: { src: "images/team2.jpg", alt: "" } })
-                  ])
+              _c("div", { staticClass: "feature-box" }, [
+                _c("div", { staticClass: "feature-icon" }, [
+                  _c("img", {
+                    attrs: { src: "images/services/nametag.png", alt: "" }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-name" }, [
-                  _vm._v("Jane Donald")
+                _c("div", { staticClass: "feature-title" }, [
+                  _vm._v("Name tags")
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-title" }, [
-                  _vm._v("Client service")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "person-social" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-twitter" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-instagram" })
-                  ])
+                _c("div", { staticClass: "feature-details" }, [
+                  _vm._v("Printing name tags with professional tools.")
                 ])
               ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-sm-6 col-md-3" }, [
-              _c("div", { staticClass: "person-box" }, [
-                _c("div", { staticClass: "person-icon" }, [
-                  _c("div", { staticClass: "person-img" }, [
-                    _c("img", { attrs: { src: "images/team3.jpg", alt: "" } })
-                  ])
+              _c("div", { staticClass: "feature-box" }, [
+                _c("div", { staticClass: "feature-icon" }, [
+                  _c("img", {
+                    attrs: { src: "images/services/certificate.png", alt: "" }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-name" }, [
-                  _vm._v("David Adams")
+                _c("div", { staticClass: "feature-title" }, [
+                  _vm._v("Certificates")
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-title" }, [
-                  _vm._v("Server Admin")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "person-social" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-twitter" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-instagram" })
-                  ])
+                _c("div", { staticClass: "feature-details" }, [
+                  _vm._v("Printing name tags with professional tools.")
                 ])
               ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-sm-6 col-md-3" }, [
-              _c("div", { staticClass: "person-box" }, [
-                _c("div", { staticClass: "person-icon" }, [
-                  _c("div", { staticClass: "person-img" }, [
-                    _c("img", { attrs: { src: "images/team4.jpg", alt: "" } })
-                  ])
+              _c("div", { staticClass: "feature-box" }, [
+                _c("div", { staticClass: "feature-icon" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "images/services/onlineRegistration.png",
+                      alt: ""
+                    }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-name" }, [
-                  _vm._v("Rose Masso")
+                _c("div", { staticClass: "feature-title" }, [
+                  _vm._v("Online Registration")
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-title" }, [
-                  _vm._v("Quality Assurance")
+                _c("div", { staticClass: "feature-details" }, [
+                  _vm._v(
+                    "We provide online registration wit emails and sms notifications"
+                  )
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-sm-6 col-md-3" }, [
+              _c("div", { staticClass: "feature-box" }, [
+                _c("div", { staticClass: "feature-icon" }, [
+                  _c("img", {
+                    attrs: { src: "images/services/kiosk.png", alt: "" }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-social" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-twitter" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-instagram" })
-                  ])
+                _c("div", { staticClass: "feature-title" }, [
+                  _vm._v("Kiosk Registration")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "feature-details" }, [
+                  _vm._v(
+                    "\n                            Integrated device provides\n                            simple ui interface to facilitate attendee interaction.\n                        "
+                  )
                 ])
               ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-sm-6 col-md-3" }, [
-              _c("div", { staticClass: "person-box" }, [
-                _c("div", { staticClass: "person-icon" }, [
-                  _c("div", { staticClass: "person-img" }, [
-                    _c("img", { attrs: { src: "images/team5.jpg", alt: "" } })
-                  ])
+              _c("div", { staticClass: "feature-box" }, [
+                _c("div", { staticClass: "feature-icon" }, [
+                  _c("img", {
+                    attrs: { src: "images/services/tracking.png", alt: "" }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-name" }, [
-                  _vm._v("Travis Walker")
+                _c("div", { staticClass: "feature-title" }, [
+                  _vm._v("Attendee Tracking")
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-title" }, [
-                  _vm._v("CO-Founder")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "person-social" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-twitter" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-instagram" })
-                  ])
+                _c("div", { staticClass: "feature-details" }, [
+                  _vm._v("\n                            Using attendee "),
+                  _c("code", [_vm._v("QR-code")]),
+                  _vm._v(
+                    " you can know all presented services\n                            for this attendee.\n                        "
+                  )
                 ])
               ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-sm-6 col-md-3" }, [
-              _c("div", { staticClass: "person-box" }, [
-                _c("div", { staticClass: "person-icon" }, [
-                  _c("div", { staticClass: "person-img" }, [
-                    _c("img", { attrs: { src: "images/team6.jpg", alt: "" } })
-                  ])
+              _c("div", { staticClass: "feature-box" }, [
+                _c("div", { staticClass: "feature-icon" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "images/services/cme.png",
+                      height: "104",
+                      alt: ""
+                    }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-name" }, [
-                  _vm._v("Bella Vayner")
+                _c("div", { staticClass: "feature-title" }, [
+                  _vm._v("CME Calculation")
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-title" }, [
-                  _vm._v("Client service")
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "person-social" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-twitter" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-instagram" })
-                  ])
+                _c("div", { staticClass: "feature-details" }, [
+                  _vm._v("\n                            Provides "),
+                  _c("code", [_vm._v("CME")]),
+                  _vm._v(
+                    " calculation for subscribed CME attendees.\n                        "
+                  )
                 ])
               ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-sm-6 col-md-3" }, [
-              _c("div", { staticClass: "person-box" }, [
-                _c("div", { staticClass: "person-icon" }, [
-                  _c("div", { staticClass: "person-img" }, [
-                    _c("img", { attrs: { src: "images/team7.jpg", alt: "" } })
-                  ])
+              _c("div", { staticClass: "feature-box" }, [
+                _c("div", { staticClass: "feature-icon" }, [
+                  _c("img", {
+                    attrs: { src: "images/services/cme-logs.png", alt: "" }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-name" }, [
-                  _vm._v("Mary Wilson")
+                _c("div", { staticClass: "feature-title" }, [
+                  _vm._v("CME Logs")
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-title" }, [
-                  _vm._v("Client service")
+                _c("div", { staticClass: "feature-details" }, [
+                  _vm._v("\n                            Logging for "),
+                  _c("code", [_vm._v("CME")]),
+                  _vm._v(" hours for each attendee.\n                        ")
+                ])
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-sm-6 col-md-3" }, [
+              _c("div", { staticClass: "feature-box" }, [
+                _c("div", { staticClass: "feature-icon" }, [
+                  _c("img", {
+                    attrs: { src: "images/services/payment.png", alt: "" }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-social" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-twitter" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-instagram" })
-                  ])
+                _c("div", { staticClass: "feature-title" }, [
+                  _vm._v("Online Payment")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "feature-details" }, [
+                  _vm._v(
+                    "\n                            We provides easy secured payment gateway for paid conferences.\n                        "
+                  )
                 ])
               ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "col-sm-6 col-md-3" }, [
-              _c("div", { staticClass: "person-box" }, [
-                _c("div", { staticClass: "person-icon" }, [
-                  _c("div", { staticClass: "person-img" }, [
-                    _c("img", { attrs: { src: "images/team8.jpg", alt: "" } })
-                  ])
+              _c("div", { staticClass: "feature-box" }, [
+                _c("div", { staticClass: "feature-icon" }, [
+                  _c("img", {
+                    attrs: { src: "images/services/statistics.png", alt: "" }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-name" }, [
-                  _vm._v("Craig Davids")
+                _c("div", { staticClass: "feature-title" }, [
+                  _vm._v("Statistics")
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-title" }, [
-                  _vm._v("Web Master")
+                _c("div", { staticClass: "feature-details" }, [
+                  _vm._v(
+                    "\n                           Our system provides full statistics about specialities of attendees,\n                            online and onsite registration, Halls, speakers and sessions.\n                        "
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6 col-md-3" }, [
+              _c("div", { staticClass: "feature-box" }, [
+                _c("div", { staticClass: "feature-icon" }, [
+                  _c("img", {
+                    attrs: {
+                      src: "images/services/marketing.png",
+                      height: "104",
+                      alt: ""
+                    }
+                  })
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "person-social" }, [
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-twitter" })
-                  ]),
-                  _vm._v(" "),
-                  _c("a", { attrs: { href: "#" } }, [
-                    _c("i", { staticClass: "fab fa-instagram" })
-                  ])
+                _c("div", { staticClass: "feature-title" }, [
+                  _vm._v("CME Calculation")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "feature-details" }, [
+                  _vm._v("\n                            Provides "),
+                  _c("code", [_vm._v("CME")]),
+                  _vm._v(
+                    " calculation for subscribed CME attendees.\n                        "
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6 col-md-3" }, [
+              _c("div", { staticClass: "feature-box" }, [
+                _c("div", { staticClass: "feature-icon" }, [
+                  _c("img", {
+                    attrs: { src: "images/services/cme-logs.png", alt: "" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "feature-title" }, [
+                  _vm._v("CME Logs")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "feature-details" }, [
+                  _vm._v("\n                            Logging for "),
+                  _c("code", [_vm._v("CME")]),
+                  _vm._v(" hours for each attendee.\n                        ")
                 ])
               ])
             ])
@@ -67909,7 +68029,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Services_vue_vue_type_template_id_30b0c6c9___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Services.vue?vue&type=template&id=30b0c6c9& */ "./resources/js/components/Services.vue?vue&type=template&id=30b0c6c9&");
 /* harmony import */ var _Services_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Services.vue?vue&type=script&lang=js& */ "./resources/js/components/Services.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _Services_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Services.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/Services.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -67917,7 +68039,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _Services_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Services_vue_vue_type_template_id_30b0c6c9___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Services_vue_vue_type_template_id_30b0c6c9___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -67946,6 +68068,22 @@ component.options.__file = "resources/js/components/Services.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Services.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Services.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Services.vue?vue&type=style&index=0&lang=css&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/Services.vue?vue&type=style&index=0&lang=css& ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Services.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Services.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Services_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
