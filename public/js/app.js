@@ -45884,38 +45884,44 @@ var render = function() {
             return _c(
               "div",
               [
-                _c("router-link", { attrs: { to: "conference/1" } }, [
-                  _c("div", { staticClass: "col-sm-6 col-md-4" }, [
-                    _c("div", { staticClass: "article-summary" }, [
-                      _c("div", { staticClass: "article-img" }, [
-                        _c("img", { attrs: { src: conference.image, alt: "" } })
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "article-details",
-                          staticStyle: { height: "200px" }
-                        },
-                        [
-                          _c("div", { staticClass: "article-title" }, [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v(_vm._s(conference.name))
+                _c(
+                  "router-link",
+                  { attrs: { to: "conference/" + conference.id } },
+                  [
+                    _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+                      _c("div", { staticClass: "article-summary" }, [
+                        _c("div", { staticClass: "article-img" }, [
+                          _c("img", {
+                            attrs: { src: conference.image, alt: "" }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "article-details",
+                            staticStyle: { height: "200px" }
+                          },
+                          [
+                            _c("div", { staticClass: "article-title" }, [
+                              _c("a", { attrs: { href: "#" } }, [
+                                _vm._v(_vm._s(conference.name))
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "article-text" }, [
+                              _vm._v(
+                                "\n                                    " +
+                                  _vm._s(conference.description) +
+                                  "\n                                "
+                              )
                             ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "article-text" }, [
-                            _vm._v(
-                              "\n                                    " +
-                                _vm._s(conference.description) +
-                                "\n                                "
-                            )
-                          ])
-                        ]
-                      )
+                          ]
+                        )
+                      ])
                     ])
-                  ])
-                ])
+                  ]
+                )
               ],
               1
             )
