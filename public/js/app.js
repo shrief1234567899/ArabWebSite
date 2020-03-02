@@ -2109,6 +2109,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2555,6 +2562,127 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_loading_overlay_dist_vue_loading_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_loading_overlay_dist_vue_loading_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar */ "./resources/js/components/Navbar.vue");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -43790,7 +43918,33 @@ var render = function() {
       _vm._v(" "),
       _c("Navbar"),
       _vm._v(" "),
-      _vm._m(0),
+      _c("div", { attrs: { id: "section" } }, [
+        _c(
+          "div",
+          { staticClass: "container-fluid", attrs: { id: "extra-info" } },
+          [
+            _c("div", { staticClass: "container" }, [
+              _c("div", { staticClass: "row" }, [
+                _c("div", { staticClass: "col-md-6" }, [
+                  _c("div", { staticClass: "text-holder" }, [
+                    _c("h1", [_vm._v(_vm._s(_vm.$t("message.about")))]),
+                    _vm._v(" "),
+                    _c("h3", { staticClass: "sub-title" }, [
+                      _vm._v(
+                        "\n                                A brand for a company is like a reputation for a person. You earn reputation\n                                by trying to do hard things well.\n                            "
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _vm._m(0)
+              ])
+            ])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _vm._m(1),
       _vm._v(" "),
       _c("Footer")
     ],
@@ -43802,41 +43956,39 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "div",
-        {
-          staticClass: "inner-header hosting-page",
-          staticStyle: { "background-color": "#2D3439 !important" },
-          attrs: { id: "header-holder" }
-        },
-        [
-          _c(
-            "div",
-            {
-              staticClass: "container-fluid inner-page",
-              attrs: { id: "page-head" }
-            },
-            [
-              _c("div", { staticClass: "container" }, [
-                _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-12 text-center" }, [
-                    _c("div", { attrs: { id: "page-icon" } }, [
-                      _c("div", { staticClass: "pricing-icon" }, [
-                        _c("img", {
-                          attrs: { src: "images/confused.svg", alt: "" }
-                        })
-                      ])
-                    ])
-                  ])
-                ])
-              ])
-            ]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "container-fluid", attrs: { id: "features" } }, [
+    return _c("div", { staticClass: "col-md-6 link-holder" }, [
+      _c("div", { staticClass: "tld-graphic" }, [
+        _c("div", { staticStyle: { opacity: "0" } }, [
+          _c("i", {
+            staticClass: "fas fa-question-circle",
+            staticStyle: { "font-size": "30px" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c("i", {
+            staticClass: "fas fa-question",
+            staticStyle: { "font-size": "30px" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticStyle: { opacity: "0" } }, [
+          _c("i", {
+            staticClass: "fas fa-question-circle",
+            staticStyle: { "font-size": "30px" }
+          })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "container-fluid", attrs: { id: "features" } },
+      [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-xs-12" }, [
@@ -44005,43 +44157,43 @@ var staticRenderFns = [
                     _c("div", { staticClass: "feature-details" }, [
                       _c("h4", [
                         _vm._v(
-                          "\n                                        Arab Organizers for Conference Management is a pioneer in Professional\n                                        Congress Organization and Association Management.\n                                    "
+                          "\n                                    Arab Organizers for Conference Management is a pioneer in Professional\n                                    Congress Organization and Association Management.\n                                "
                         )
                       ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          "\n                                        The company is committed to providing the highest standard of service to\n                                        medical and scientific associations, aiding in the facilitation of global\n                                        exchange and management of medical knowledge.\n                                    "
+                          "\n                                    The company is committed to providing the highest standard of service to\n                                    medical and scientific associations, aiding in the facilitation of global\n                                    exchange and management of medical knowledge.\n                                "
                         )
                       ]),
                       _vm._v(" "),
                       _c("h4", [
                         _vm._v(
-                          "\n                                        We are a global company with a local presence providing our services to\n                                        scientific Organizations and Medical Societies all over Egypt.\n                                    "
+                          "\n                                    We are a global company with a local presence providing our services to\n                                    scientific Organizations and Medical Societies all over Egypt.\n                                "
                         )
                       ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          "We depend on our accountability and trust to provide the highest standards of\n                                        service to our clients. We have a self-motivated, professional, trustable\n                                        Staff devoted to the standards of integrity and common values of our\n                                        mission."
+                          "We depend on our accountability and trust to provide the highest standards of\n                                    service to our clients. We have a self-motivated, professional, trustable\n                                    Staff devoted to the standards of integrity and common values of our\n                                    mission."
                         )
                       ]),
                       _vm._v(" "),
                       _c("h4", [
                         _vm._v(
-                          "Our employees are proud and confident to be key\n                                        players in achieving our clients' needs and goals."
+                          "Our employees are proud and confident to be key\n                                    players in achieving our clients' needs and goals."
                         )
                       ]),
                       _vm._v(" "),
                       _c("p", [
                         _vm._v(
-                          "We have the flexibility to tailor our services to meet our clients' needs as\n                                        well as the market needs."
+                          "We have the flexibility to tailor our services to meet our clients' needs as\n                                    well as the market needs."
                         )
                       ]),
                       _vm._v(" "),
                       _c("h4", [
                         _vm._v(
-                          "Honesty is the only mean to earn trust; this is\n                                        why we are confident that our continued success, self-growing and\n                                        professionalism will be the reasons to take our organization to higher and\n                                        higher levels."
+                          "Honesty is the only mean to earn trust; this is\n                                    why we are confident that our continued success, self-growing and\n                                    professionalism will be the reasons to take our organization to higher and\n                                    higher levels."
                         )
                       ])
                     ])
@@ -44071,7 +44223,7 @@ var staticRenderFns = [
                   _c("div", { staticClass: "feature-details" }, [
                     _c("h4", [
                       _vm._v(
-                        "Deliver top-notch events, Inspire the region with our talents and\n                                        Createvalue that makes a difference!"
+                        "Deliver top-notch events, Inspire the region with our talents and\n                                    Createvalue that makes a difference!"
                       )
                     ])
                   ])
@@ -44100,7 +44252,7 @@ var staticRenderFns = [
                   _c("div", { staticClass: "feature-details" }, [
                     _c("h4", [
                       _vm._v(
-                        "To Grow One of the Biggest Event Management Company Operating in Diverse\n                                        Sectors In MENA Region."
+                        "To Grow One of the Biggest Event Management Company Operating in Diverse\n                                    Sectors In MENA Region."
                       )
                     ])
                   ])
@@ -44146,8 +44298,8 @@ var staticRenderFns = [
             ])
           ])
         ])
-      ])
-    ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -45304,7 +45456,6 @@ var render = function() {
           height: 100,
           width: 200,
           opacity: 0.6,
-          "on-cancel": _vm.onCancel,
           "is-full-page": _vm.fullPage
         },
         on: {
@@ -45327,9 +45478,9 @@ var render = function() {
                   _c("div", { staticClass: "text-holder" }, [
                     _c("h1", [_vm._v(_vm._s(_vm.$t("message.services")))]),
                     _vm._v(" "),
-                    _c("p", [
+                    _c("h3", { staticClass: "sub-title" }, [
                       _vm._v(
-                        "We aim to reach you anytime & everywhere.. Your satisfaction is our mission.\n                                For any inquiries or complaints please contact us"
+                        "\n                                Our company uses the latest technologies in conference management field,\n                                Providing the best level of regulation.\n                            "
                       )
                     ])
                   ])
@@ -45340,7 +45491,9 @@ var render = function() {
             ])
           ]
         )
-      ])
+      ]),
+      _vm._v(" "),
+      _vm._m(1)
     ],
     1
   )
@@ -45352,9 +45505,274 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-md-6 link-holder" }, [
       _c("div", { staticClass: "tld-graphic" }, [
-        _c("div", [_c("i", { staticClass: "fas fa-phone" })])
+        _c("div", { staticStyle: { opacity: "0" } }, [
+          _c("i", {
+            staticClass: "fas fa-question-circle",
+            staticStyle: { "font-size": "30px" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c("i", {
+            staticClass: "fas fa-cogs",
+            staticStyle: { "font-size": "30px" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticStyle: { opacity: "0" } }, [
+          _c("i", {
+            staticClass: "fas fa-question-circle",
+            staticStyle: { "font-size": "30px" }
+          })
+        ])
       ])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "container-fluid", attrs: { id: "team" } },
+      [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-xs-12" }, [
+              _c("div", { staticClass: "row-title" }, [_vm._v("Our Services")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "row-subtitle" })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row team-holder" }, [
+            _c("div", { staticClass: "col-sm-6 col-md-3" }, [
+              _c("div", { staticClass: "person-box" }, [
+                _c("div", { staticClass: "person-icon" }, [
+                  _c("div", { staticClass: "person-img" }, [
+                    _c("img", { attrs: { src: "images/usher.png", alt: "" } })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-name" }, [
+                  _vm._v("Chris Walker")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-title" }, [
+                  _vm._v("CEO & CO-Founder")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-social" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-twitter" })
+                  ]),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-instagram" })
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6 col-md-3" }, [
+              _c("div", { staticClass: "person-box" }, [
+                _c("div", { staticClass: "person-icon" }, [
+                  _c("div", { staticClass: "person-img" }, [
+                    _c("img", { attrs: { src: "images/team2.jpg", alt: "" } })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-name" }, [
+                  _vm._v("Jane Donald")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-title" }, [
+                  _vm._v("Client service")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-social" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-twitter" })
+                  ]),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-instagram" })
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6 col-md-3" }, [
+              _c("div", { staticClass: "person-box" }, [
+                _c("div", { staticClass: "person-icon" }, [
+                  _c("div", { staticClass: "person-img" }, [
+                    _c("img", { attrs: { src: "images/team3.jpg", alt: "" } })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-name" }, [
+                  _vm._v("David Adams")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-title" }, [
+                  _vm._v("Server Admin")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-social" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-twitter" })
+                  ]),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-instagram" })
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6 col-md-3" }, [
+              _c("div", { staticClass: "person-box" }, [
+                _c("div", { staticClass: "person-icon" }, [
+                  _c("div", { staticClass: "person-img" }, [
+                    _c("img", { attrs: { src: "images/team4.jpg", alt: "" } })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-name" }, [
+                  _vm._v("Rose Masso")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-title" }, [
+                  _vm._v("Quality Assurance")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-social" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-twitter" })
+                  ]),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-instagram" })
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6 col-md-3" }, [
+              _c("div", { staticClass: "person-box" }, [
+                _c("div", { staticClass: "person-icon" }, [
+                  _c("div", { staticClass: "person-img" }, [
+                    _c("img", { attrs: { src: "images/team5.jpg", alt: "" } })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-name" }, [
+                  _vm._v("Travis Walker")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-title" }, [
+                  _vm._v("CO-Founder")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-social" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-twitter" })
+                  ]),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-instagram" })
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6 col-md-3" }, [
+              _c("div", { staticClass: "person-box" }, [
+                _c("div", { staticClass: "person-icon" }, [
+                  _c("div", { staticClass: "person-img" }, [
+                    _c("img", { attrs: { src: "images/team6.jpg", alt: "" } })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-name" }, [
+                  _vm._v("Bella Vayner")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-title" }, [
+                  _vm._v("Client service")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-social" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-twitter" })
+                  ]),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-instagram" })
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6 col-md-3" }, [
+              _c("div", { staticClass: "person-box" }, [
+                _c("div", { staticClass: "person-icon" }, [
+                  _c("div", { staticClass: "person-img" }, [
+                    _c("img", { attrs: { src: "images/team7.jpg", alt: "" } })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-name" }, [
+                  _vm._v("Mary Wilson")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-title" }, [
+                  _vm._v("Client service")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-social" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-twitter" })
+                  ]),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-instagram" })
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-6 col-md-3" }, [
+              _c("div", { staticClass: "person-box" }, [
+                _c("div", { staticClass: "person-icon" }, [
+                  _c("div", { staticClass: "person-img" }, [
+                    _c("img", { attrs: { src: "images/team8.jpg", alt: "" } })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-name" }, [
+                  _vm._v("Craig Davids")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-title" }, [
+                  _vm._v("Web Master")
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "person-social" }, [
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-twitter" })
+                  ]),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "#" } }, [
+                    _c("i", { staticClass: "fab fa-instagram" })
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
