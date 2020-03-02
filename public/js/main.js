@@ -175,14 +175,14 @@ $(window).on("load", function() {
     $('.feature2 span','#custom-plan').text(cPlan.value*98);
 
     // Apps Section hover function
-    var appHolder = $(".app-icon-holder", "#apps");
-
-    appHolder.on("mouseover",function(){
-        appHolder.removeClass("opened");
-        $(this).addClass("opened");
-        $(".show-details", "#apps").removeClass("show-details");
-        $(".app-details"+$(this).data("id"), "#apps").addClass("show-details");
-    });
+    // var appHolder = $(".app-icon-holder", "#apps");
+    //
+    // appHolder.on("mouseover",function(){
+    //     appHolder.removeClass("opened");
+    //     $(this).addClass("opened");
+    //     $(".show-details", "#apps").removeClass("show-details");
+    //     $(".app-details"+$(this).data("id"), "#apps").addClass("show-details");
+    // });
 
     // More Info Section hover function
     // var infoLink = $(".info-link", "#more-info");

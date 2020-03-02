@@ -2478,7 +2478,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
 
@@ -2498,8 +2497,7 @@ __webpack_require__.r(__webpack_exports__);
     Footer: _Footer__WEBPACK_IMPORTED_MODULE_2__["default"],
     agile: vue_agile__WEBPACK_IMPORTED_MODULE_7__["VueAgile"],
     Conferences: _conference_Conferences__WEBPACK_IMPORTED_MODULE_6__["default"],
-    Heroes: _Heroes__WEBPACK_IMPORTED_MODULE_3__["default"],
-    OurApplication: _OurApplication__WEBPACK_IMPORTED_MODULE_5__["default"]
+    Heroes: _Heroes__WEBPACK_IMPORTED_MODULE_3__["default"]
   },
   mounted: function mounted() {},
   methods: {}
@@ -2595,10 +2593,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
   data: function data() {
     return {};
+  },
+  mounted: function mounted() {
+    var appHolder = $(".app-icon-holder", "#apps");
+    appHolder.on("mouseover", function () {
+      appHolder.removeClass("opened");
+      $(this).addClass("opened");
+      $(".show-details", "#apps").removeClass("show-details");
+      $(".app-details" + $(this).data("id"), "#apps").addClass("show-details");
+    });
   }
 });
 
@@ -45324,8 +45334,6 @@ var render = function() {
       _vm._v(" "),
       _c("TopServices"),
       _vm._v(" "),
-      _c("OurApplication"),
-      _vm._v(" "),
       _c("Footer")
     ],
     1
@@ -45612,6 +45620,8 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", [
       _c("div", { staticClass: "container-fluid", attrs: { id: "apps" } }, [
+        _c("div", { staticClass: "bg-color" }),
+        _vm._v(" "),
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-md-12" }, [
@@ -45727,7 +45737,7 @@ var staticRenderFns = [
                         _vm._v(" "),
                         _c("div", { staticClass: "app-text" }, [
                           _vm._v(
-                            "Discover how did attendees experience your event with measurable metrics.\n                                            Make data driven decisions to make your next event better than the previous.\n                                        "
+                            "Discover how did attendees experience your event with\n                                            measurable metrics.\n                                            Make data driven decisions to make your next event better than the\n                                            previous.\n                                        "
                           )
                         ])
                       ])

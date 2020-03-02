@@ -3,6 +3,7 @@
 <template>
     <div>
         <div id="apps" class="container-fluid">
+            <div class="bg-color"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -50,8 +51,10 @@
                                         </div>
                                         <div class="col-md-7">
                                             <div class="app-title">Data Analytics</div>
-                                            <div class="app-text">Discover how did attendees experience your event with measurable metrics.
-                                                Make data driven decisions to make your next event better than the previous.
+                                            <div class="app-text">Discover how did attendees experience your event with
+                                                measurable metrics.
+                                                Make data driven decisions to make your next event better than the
+                                                previous.
                                             </div>
                                         </div>
                                     </div>
@@ -82,6 +85,16 @@
         components: {},
         data() {
             return {}
+        },
+        mounted() {
+            var appHolder = $(".app-icon-holder", "#apps");
+
+            appHolder.on("mouseover", function () {
+                appHolder.removeClass("opened");
+                $(this).addClass("opened");
+                $(".show-details", "#apps").removeClass("show-details");
+                $(".app-details" + $(this).data("id"), "#apps").addClass("show-details");
+            });
         }
     }
 </script>
