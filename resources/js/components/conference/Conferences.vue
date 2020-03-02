@@ -19,7 +19,7 @@
         <div class="container">
             <div class="row">
                 <div v-for="conference in conferences">
-                    <router-link to="conference/1">
+                    <router-link :to="'conference/' + conference.id">
                         <div class="col-sm-6 col-md-4">
                             <div class="article-summary">
                                 <div class="article-img">

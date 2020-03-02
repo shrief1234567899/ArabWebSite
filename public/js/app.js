@@ -2691,6 +2691,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
   data: function data() {
@@ -7892,7 +7895,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nimg{\n    border-radius: 7px;\n}\n", ""]);
+exports.push([module.i, "\nimg{\n    border-radius: 7px;\n}\n.mfeature-box{\n    min-height: 400px;\n}\n", ""]);
 
 // exports
 
@@ -46094,38 +46097,44 @@ var render = function() {
             return _c(
               "div",
               [
-                _c("router-link", { attrs: { to: "conference/1" } }, [
-                  _c("div", { staticClass: "col-sm-6 col-md-4" }, [
-                    _c("div", { staticClass: "article-summary" }, [
-                      _c("div", { staticClass: "article-img" }, [
-                        _c("img", { attrs: { src: conference.image, alt: "" } })
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "article-details",
-                          staticStyle: { height: "200px" }
-                        },
-                        [
-                          _c("div", { staticClass: "article-title" }, [
-                            _c("a", { attrs: { href: "#" } }, [
-                              _vm._v(_vm._s(conference.name))
+                _c(
+                  "router-link",
+                  { attrs: { to: "conference/" + conference.id } },
+                  [
+                    _c("div", { staticClass: "col-sm-6 col-md-4" }, [
+                      _c("div", { staticClass: "article-summary" }, [
+                        _c("div", { staticClass: "article-img" }, [
+                          _c("img", {
+                            attrs: { src: conference.image, alt: "" }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "article-details",
+                            staticStyle: { height: "200px" }
+                          },
+                          [
+                            _c("div", { staticClass: "article-title" }, [
+                              _c("a", { attrs: { href: "#" } }, [
+                                _vm._v(_vm._s(conference.name))
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "article-text" }, [
+                              _vm._v(
+                                "\n                                    " +
+                                  _vm._s(conference.description) +
+                                  "\n                                "
+                              )
                             ])
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "article-text" }, [
-                            _vm._v(
-                              "\n                                    " +
-                                _vm._s(conference.description) +
-                                "\n                                "
-                            )
-                          ])
-                        ]
-                      )
+                          ]
+                        )
+                      ])
                     ])
-                  ])
-                ])
+                  ]
+                )
               ],
               1
             )
@@ -63269,7 +63278,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_components_CurrentConferences__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/js/components/CurrentConferences */ "./resources/js/components/CurrentConferences.vue");
 /* harmony import */ var _js_components_PreviousConferences__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/js/components/PreviousConferences */ "./resources/js/components/PreviousConferences.vue");
 /* harmony import */ var _js_components_Contact__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/js/components/Contact */ "./resources/js/components/Contact.vue");
-/* harmony import */ var _js_components_Services__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @/js/components/Services */ "./resources/js/components/Services.vue");
+/* harmony import */ var _js_components_Services__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/js/components/Services */ "./resources/js/components/Services.vue");
 
 
 
@@ -63319,7 +63328,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   }, {
     path: '/services',
     name: 'services',
-    component: _js_components_Services__WEBPACK_IMPORTED_MODULE_11__["default"]
+    component: _js_components_Services__WEBPACK_IMPORTED_MODULE_10__["default"]
   }]
 });
 /* harmony default export */ __webpack_exports__["default"] = (router);
