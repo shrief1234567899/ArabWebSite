@@ -13,7 +13,7 @@ const messages = {
             videos: 'Videos',
             contact_us: 'Contact Us',
             our_info: 'Our Info',
-            heroes: 'Heroes',
+            heroes: 'Our Clients',
             top_services: 'Top Services'
         }
     },
