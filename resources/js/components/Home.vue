@@ -20,6 +20,7 @@
         </div>
         <Heroes></Heroes>
         <TopServices></TopServices>
+        <OurApplication></OurApplication>
         <Footer></Footer>
     </div>
 </template>
@@ -29,6 +30,7 @@
     import Footer from './Footer'
     import Heroes from './Heroes'
     import TopServices from './TopServices'
+    import OurApplication from './OurApplication'
     import Conferences from './conference/Conferences'
     import {VueAgile} from 'vue-agile'
 
@@ -39,7 +41,7 @@
         },
         components: {
             TopServices,
-            Navbar, Footer, agile: VueAgile, Conferences, Heroes
+            Navbar, Footer, agile: VueAgile, Conferences, Heroes, OurApplication
         },
         mounted() {
         },
