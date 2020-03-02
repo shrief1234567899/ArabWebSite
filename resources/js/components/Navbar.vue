@@ -20,12 +20,12 @@
                              id="bs">
                             <ul class="nav navbar-nav navbar-left">
                                 <li>
-                                    <router-link to="/">
+                                    <router-link to="/" exact>
                                         {{ $t("message.home") }}
                                     </router-link>
                                 </li>
                                 <li>
-                                    <router-link to="/about">
+                                    <router-link to="/about" exact>
                                         {{ $t("message.about") }}
                                     </router-link>
                                 </li>
@@ -33,12 +33,12 @@
                                     <a href="#"> {{ $t("message.conf") }} <i class="fas fa-caret-down"></i></a>
                                     <ul class="dropdown-menu">
                                         <li>
-                                            <router-link to="/currentConferences">
+                                            <router-link to="/currentConferences" exact>
                                                 {{ $t("message.curr_conf") }}
                                             </router-link>
                                         </li>
                                         <li>
-                                            <router-link to="/previousConferences">
+                                            <router-link to="/previousConferences" exact>
                                                 {{ $t("message.pre_conf") }}
                                             </router-link>
                                         </li>

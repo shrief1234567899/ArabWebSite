@@ -2862,6 +2862,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -3196,7 +3215,6 @@ __webpack_require__.r(__webpack_exports__);
     getConferencesDetails: function getConferencesDetails() {
       var _this = this;
 
-      var screen = this;
       axios.get('https://araborganizers-system.com/api/get-single-conference?id=' + this.$route.params.id).then(function (response) {
         if (typeof response.data.data != "undefined") {
           response.data.data.image = 'https://araborganizers-system.com' + response.data.data.image;
@@ -3208,9 +3226,9 @@ __webpack_require__.r(__webpack_exports__);
           });
         }
 
-        screen.isLoading = false;
+        _this.isLoading = false;
       })["catch"](function (error) {
-        screen.isLoading = false;
+        _this.isLoading = false;
       });
     }
   }
@@ -8193,7 +8211,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#ifeatures .feature-box {\n    margin-bottom: 0px !important;\n    padding: 10px 10px !important;\n}\n", ""]);
+exports.push([module.i, "\n#ifeatures .feature-box {\n    margin-bottom: 0px !important;\n    padding: 10px 10px !important;\n    transition: all 0.3s linear;\n}\n#ifeatures .feature-box:hover {\n    transform:scale(1.15);\n}\n", ""]);
 
 // exports
 
@@ -45410,7 +45428,7 @@ var render = function() {
                     _c(
                       "li",
                       [
-                        _c("router-link", { attrs: { to: "/" } }, [
+                        _c("router-link", { attrs: { to: "/", exact: "" } }, [
                           _vm._v(
                             "\n                                    " +
                               _vm._s(_vm.$t("message.home")) +
@@ -45424,13 +45442,17 @@ var render = function() {
                     _c(
                       "li",
                       [
-                        _c("router-link", { attrs: { to: "/about" } }, [
-                          _vm._v(
-                            "\n                                    " +
-                              _vm._s(_vm.$t("message.about")) +
-                              "\n                                "
-                          )
-                        ])
+                        _c(
+                          "router-link",
+                          { attrs: { to: "/about", exact: "" } },
+                          [
+                            _vm._v(
+                              "\n                                    " +
+                                _vm._s(_vm.$t("message.about")) +
+                                "\n                                "
+                            )
+                          ]
+                        )
                       ],
                       1
                     ),
@@ -45447,7 +45469,9 @@ var render = function() {
                           [
                             _c(
                               "router-link",
-                              { attrs: { to: "/currentConferences" } },
+                              {
+                                attrs: { to: "/currentConferences", exact: "" }
+                              },
                               [
                                 _vm._v(
                                   "\n                                            " +
@@ -45465,7 +45489,9 @@ var render = function() {
                           [
                             _c(
                               "router-link",
-                              { attrs: { to: "/previousConferences" } },
+                              {
+                                attrs: { to: "/previousConferences", exact: "" }
+                              },
                               [
                                 _vm._v(
                                   "\n                                            " +
@@ -45970,7 +45996,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("div", { staticClass: "feature-details" }, [
                   _vm._v(
-                    "Professional Ushering Team has experience to deal with attendees"
+                    "Professional Ushering Team has experience to deal with\n                            attendees\n                        "
                   )
                 ])
               ])
@@ -45989,7 +46015,11 @@ var staticRenderFns = [
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "feature-details" }, [
-                  _vm._v("Printing name tags with professional tools.")
+                  _vm._v("\n                            Using name tags and "),
+                  _c("code", [_vm._v("QR-Code")]),
+                  _vm._v(
+                    " helps to track the attendee\n                            movements and guarantee the ultimate regulation.\n                        "
+                  )
                 ])
               ])
             ]),
@@ -46029,7 +46059,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("div", { staticClass: "feature-details" }, [
                   _vm._v(
-                    "We provide online registration wit emails and sms notifications"
+                    "We provide online registration wit emails and sms\n                            notifications\n                        "
                   )
                 ])
               ])
@@ -46161,7 +46191,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("div", { staticClass: "feature-details" }, [
                   _vm._v(
-                    "\n                           Our system provides full statistics about specialities of attendees,\n                            online and onsite registration, Halls, speakers and sessions.\n                        "
+                    "\n                            Our system provides full statistics about specialities of attendees,\n                            online and onsite registration, Halls, speakers and sessions.\n                        "
                   )
                 ])
               ])
@@ -46180,14 +46210,12 @@ var staticRenderFns = [
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "feature-title" }, [
-                  _vm._v("CME Calculation")
+                  _vm._v("Marketing")
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "feature-details" }, [
-                  _vm._v("\n                            Provides "),
-                  _c("code", [_vm._v("CME")]),
                   _vm._v(
-                    " calculation for subscribed CME attendees.\n                        "
+                    "\n                            Advanced online marketing support like Facebook and Instagram advertising\n                            with the lowest cost.\n                        "
                   )
                 ])
               ])
@@ -46197,18 +46225,18 @@ var staticRenderFns = [
               _c("div", { staticClass: "feature-box" }, [
                 _c("div", { staticClass: "feature-icon" }, [
                   _c("img", {
-                    attrs: { src: "images/services/cme-logs.png", alt: "" }
+                    attrs: { src: "images/services/booking.png", alt: "" }
                   })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "feature-title" }, [
-                  _vm._v("CME Logs")
+                  _vm._v("Hotels Booking")
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "feature-details" }, [
-                  _vm._v("\n                            Logging for "),
-                  _c("code", [_vm._v("CME")]),
-                  _vm._v(" hours for each attendee.\n                        ")
+                  _vm._v(
+                    "\n                            Providing accommodation for chair persons and speakers.\n                        "
+                  )
                 ])
               ])
             ])

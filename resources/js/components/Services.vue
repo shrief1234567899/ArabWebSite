@@ -2,6 +2,17 @@
     #ifeatures .feature-box {
         margin-bottom: 0px !important;
         padding: 10px 10px !important;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+
+    #ifeatures .feature-box:hover {
+        -webkit-transform:scale(1.15);
+        -moz-transform:scale(1.15);
+        -o-transform:scale(1.15);
+        transform:scale(1.15);
     }
 </style>
 <template>
@@ -55,7 +66,9 @@
                                 <img src="images/services/usher.png" alt="">
                             </div>
                             <div class="feature-title">Ushering Team</div>
-                            <div class="feature-details">Professional Ushering Team has experience to deal with attendees</div>
+                            <div class="feature-details">Professional Ushering Team has experience to deal with
+                                attendees
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3">
@@ -64,7 +77,10 @@
                                 <img src="images/services/nametag.png" alt="">
                             </div>
                             <div class="feature-title">Name tags</div>
-                            <div class="feature-details">Printing name tags with professional tools.</div>
+                            <div class="feature-details">
+                                Using name tags and <code>QR-Code</code> helps to track the attendee
+                                movements and guarantee the ultimate regulation.
+                            </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3">
@@ -82,7 +98,9 @@
                                 <img src="images/services/onlineRegistration.png" alt="">
                             </div>
                             <div class="feature-title">Online Registration</div>
-                            <div class="feature-details">We provide online registration wit emails and sms notifications</div>
+                            <div class="feature-details">We provide online registration wit emails and sms
+                                notifications
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -153,7 +171,7 @@
                             </div>
                             <div class="feature-title">Statistics</div>
                             <div class="feature-details">
-                               Our system provides full statistics about specialities of attendees,
+                                Our system provides full statistics about specialities of attendees,
                                 online and onsite registration, Halls, speakers and sessions.
                             </div>
                         </div>
@@ -163,20 +181,21 @@
                             <div class="feature-icon">
                                 <img src="images/services/marketing.png" height="104" alt="">
                             </div>
-                            <div class="feature-title">CME Calculation</div>
+                            <div class="feature-title">Marketing</div>
                             <div class="feature-details">
-                                Provides <code>CME</code> calculation for subscribed CME attendees.
+                                Advanced online marketing support like Facebook and Instagram advertising
+                                with the lowest cost.
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-3">
                         <div class="feature-box">
                             <div class="feature-icon">
-                                <img src="images/services/cme-logs.png" alt="">
+                                <img src="images/services/booking.png" alt="">
                             </div>
-                            <div class="feature-title">CME Logs</div>
+                            <div class="feature-title">Hotels Booking</div>
                             <div class="feature-details">
-                                Logging for <code>CME</code> hours for each attendee.
+                                Providing accommodation for chair persons and speakers.
                             </div>
                         </div>
                     </div>

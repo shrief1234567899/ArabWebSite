@@ -198,7 +198,6 @@
             onCancel() {
             },
             getConferencesDetails: function () {
-                let screen = this;
                 axios
                     .get('https://araborganizers-system.com/api/get-single-conference?id=' + this.$route.params.id)
                     .then(response => {
@@ -212,10 +211,10 @@
                                 $('.show-details').show();
                             })
                         }
-                        screen.isLoading = false;
+                        this.isLoading = false;
                     })
                     .catch(error => {
-                        screen.isLoading = false;
+                        this.isLoading = false;
                     })
             },
         }
