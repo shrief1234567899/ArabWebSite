@@ -2589,8 +2589,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 
@@ -45351,11 +45349,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-md-6 link-holder" }, [
       _c("div", { staticClass: "tld-graphic" }, [
-        _c("div", [_c("i", { staticClass: "fas fa-phone" })]),
-        _vm._v(" "),
-        _c("div", [_c("i", { staticClass: "fas fa-envelope" })]),
-        _vm._v(" "),
-        _c("div", [_c("i", { staticClass: "fas fa-map-marker" })])
+        _c("div", [_c("i", { staticClass: "fas fa-phone" })])
       ])
     ])
   }

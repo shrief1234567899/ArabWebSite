@@ -23,8 +23,6 @@
                         <div class="col-md-6 link-holder">
                             <div class="tld-graphic">
                                 <div><i class="fas fa-phone"></i></div>
-                                <div><i class="fas fa-envelope"></i></div>
-                                <div><i class="fas fa-map-marker"></i></div>
                             </div>
                         </div>
                     </div>
