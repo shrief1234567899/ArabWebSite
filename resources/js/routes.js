@@ -9,6 +9,7 @@ import Video from '@/js/components/media/Video';
 import CurrentConferences from '@/js/components/CurrentConferences';
 import PreviousConferences from '@/js/components/PreviousConferences';
 import Contact from '@/js/components/Contact';
+import Services from '@/js/components/Services';
 
 Vue.use(VueRouter);
 
@@ -55,6 +56,11 @@ const router = new VueRouter({
             name: 'contact',
             component: Contact
         },
+        {
+            path: '/services',
+            name: 'services',
+            component: Services
+        }
     ],
 });
 

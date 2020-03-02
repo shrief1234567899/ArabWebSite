@@ -1,3 +1,8 @@
+<style>
+    img{
+        border-radius: 7px;
+    }
+</style>
 <template>
     <div>
         <div id="more-features" class="container-fluid">
