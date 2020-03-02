@@ -7409,7 +7409,7 @@ svg.logo text {
 @media (max-width: 990px) and (min-width: 768px) {
     .logo-holder{
         position: absolute;
-        left: 46% !important;
+        left: 49% !important;
         margin-left: -50px !important;
         display: block;
         padding-top: 2%;
