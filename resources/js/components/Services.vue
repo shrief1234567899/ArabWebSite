@@ -195,7 +195,7 @@
                             </div>
                             <div class="feature-title">Hotels Booking</div>
                             <div class="feature-details">
-                                Providing accommodation for chair persons and speakers.
+                                We have a comprehensive portfolio of conference venues available for hire on a day or residential basis.
                             </div>
                         </div>
                     </div>

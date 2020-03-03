@@ -48438,7 +48438,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("div", { staticClass: "feature-details" }, [
                   _vm._v(
-                    "\n                            Providing accommodation for chair persons and speakers.\n                        "
+                    "\n                            We have a comprehensive portfolio of conference venues available for hire on a day or residential basis.\n                        "
                   )
                 ])
               ])
