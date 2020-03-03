@@ -18,11 +18,11 @@
     }
 
     .error-message {
-        color: #373058;
+        color: #721c24;
+        font-weight: 500;
     }
 
     .error-icon {
-        font-size: 18px;
         color: #721c24;
         border-radius: 30%;
         animation: shadow-pulse 1s infinite;
