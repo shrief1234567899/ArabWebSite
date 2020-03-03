@@ -2,9 +2,14 @@
     <div>
         <Navbar></Navbar>
         <div id="section">
-            <div class="col-md-12" style="margin-top:50px">
-                <div class="row-title">{{ $t("message.curr_conf") }}</div>
-                <div class="row-subtitle"></div>
+            <div id="page-head" class="container-fluid inner-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="page-title">{{ $t("message.curr_conf") }}</div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <Conferences type="get-recent-conferences"></Conferences>
         </div>

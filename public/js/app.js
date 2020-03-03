@@ -2328,6 +2328,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 
@@ -2636,6 +2641,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Navbar */ "./resources/js/components/Navbar.vue");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Footer */ "./resources/js/components/Footer.vue");
 /* harmony import */ var _conference_Conferences__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./conference/Conferences */ "./resources/js/components/conference/Conferences.vue");
+//
+//
+//
+//
+//
 //
 //
 //
@@ -46968,13 +46978,20 @@ var render = function() {
         [
           _c(
             "div",
-            { staticClass: "col-md-12", staticStyle: { "margin-top": "50px" } },
+            {
+              staticClass: "container-fluid inner-page",
+              attrs: { id: "page-head" }
+            },
             [
-              _c("div", { staticClass: "row-title" }, [
-                _vm._v(_vm._s(_vm.$t("message.curr_conf")))
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "row-subtitle" })
+              _c("div", { staticClass: "container" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-12 text-center" }, [
+                    _c("div", { staticClass: "page-title" }, [
+                      _vm._v(_vm._s(_vm.$t("message.curr_conf")))
+                    ])
+                  ])
+                ])
+              ])
             ]
           ),
           _vm._v(" "),
@@ -48038,13 +48055,20 @@ var render = function() {
         [
           _c(
             "div",
-            { staticClass: "col-md-12", staticStyle: { "margin-top": "50px" } },
+            {
+              staticClass: "container-fluid inner-page",
+              attrs: { id: "page-head" }
+            },
             [
-              _c("div", { staticClass: "row-title" }, [
-                _vm._v(_vm._s(_vm.$t("message.pre_conf")))
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "row-subtitle" })
+              _c("div", { staticClass: "container" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-12 text-center" }, [
+                    _c("div", { staticClass: "page-title" }, [
+                      _vm._v(_vm._s(_vm.$t("message.pre_conf")))
+                    ])
+                  ])
+                ])
+              ])
             ]
           ),
           _vm._v(" "),
