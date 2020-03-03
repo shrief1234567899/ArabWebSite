@@ -10,6 +10,7 @@ import CurrentConferences from '@/js/components/CurrentConferences';
 import PreviousConferences from '@/js/components/PreviousConferences';
 import Contact from '@/js/components/Contact';
 import Services from '@/js/components/Services';
+import NotFound from '@/js/components/NotFound';
 
 Vue.use(VueRouter);
 
@@ -67,7 +68,8 @@ const router = new VueRouter({
             path: '/services',
             name: 'services',
             component: Services
-        }
+        },
+        { path: "*", component: NotFound }
     ],
 });
 

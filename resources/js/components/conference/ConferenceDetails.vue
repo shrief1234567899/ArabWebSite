@@ -50,41 +50,108 @@
                  :opacity="0.6"
                  :on-cancel="onCancel"
                  :is-full-page="fullPage"></loading>
-        <Navbar></Navbar>
-        <div v-if="conference">
-            <div id="section">
-                <div id="extra-info" style="text-align:left">
+        <div>
+            <Navbar v-if="!notFound"></Navbar>
+            <div v-if="conference && !notFound">
+                <div id="section">
+                    <div id="extra-info" style="text-align:left">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 text-center">
+                                    <a target="_blank" :href="conference.image">
+                                        <div class="">
+                                            <img class="conf-img" :src="conference.image" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="head-content">
+                                        <h4 style="color:white">{{conference.name}}</h4>
+                                        <p>
+                                            {{conference.description}}
+                                        </p>
+                                    </div>
+                                    <hr style="color: white">
+                                    <div class="row">
+                                        <div class="col-md-12" style="padding-top:10px">
+                                            <div class="address" style="color: white">
+                                                <i class="fas fa-map-marker" style="color: white"></i>
+                                                {{conference.address}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12" style="padding-top:10px">
+                                            <div class="day" style="color: white">
+                                                <i class="fas fa-calendar" style="color: white"></i>
+                                                <span>{{ conference.start_date | moment("dddd, MMMM Do") }} - {{ conference.end_date | moment("dddd, MMMM Do") }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="more-info" class="container-fluid" style="padding-top: 20px" v-if="conference.brochure_link || conference.open">
+                    <div class="col-md-12">
+                        <div class="row-title">{{conference.name}}</div>
+                        <div class="row-subtitle"></div>
+                    </div>
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4 text-center">
-                                <a target="_blank" :href="conference.image">
-                                    <div class="">
-                                        <img class="conf-img" :src="conference.image" alt="">
-                                    </div>
-                                </a>
+                            <div class="col-md-3">
+                                <div class="links-holder">
+                                    <ul>
+                                        <li v-if="conference.program_link">
+                                            <div class="info-link opened" data-id="1">Program</div>
+                                        </li>
+                                        <li v-if="conference.brochure_link">
+                                            <div class="info-link" v-bind:class="{'opened' : !conference.program_link}"
+                                                 data-id="2">Brochure
+                                            </div>
+                                        </li>
+                                        <!--                                    <li>-->
+                                        <!--                                        <div class="info-link"-->
+                                        <!--                                             v-bind:class="{'opened' : !conference.program_link && !conference.brochure_link}"-->
+                                        <!--                                             data-id="3">Abstract-->
+                                        <!--                                        </div>-->
+                                        <!--                                    </li>-->
+                                        <li>
+                                            <div class="info-link" data-id="4" v-if="conference.open">Registration</div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-md-8">
-                                <div class="head-content">
-                                    <h4 style="color:white">{{conference.name}}</h4>
-                                    <p>
-                                        {{conference.description}}
-                                    </p>
-                                </div>
-                                <hr style="color: white">
-                                <div class="row">
-                                    <div class="col-md-12" style="padding-top:10px">
-                                        <div class="address" style="color: white">
-                                            <i class="fas fa-map-marker" style="color: white"></i>
-                                            {{conference.address}}
-                                        </div>
+                            <div class="col-md-9">
+                                <div class="info-details-holder">
+                                    <div class="info-details info-d1" v-if="conference.program_link"
+                                         v-bind:class="{'show-details' : conference.program_link}">
+                                        <object class="iframe"
+                                                :data="conference.program_link"
+                                                type="application/pdf"
+                                                width="100%" height="600">
+                                            <embed
+                                                :src="conference.program_link"
+                                                type="application/pdf"/>
+                                        </object>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12" style="padding-top:10px">
-                                        <div class="day" style="color: white">
-                                            <i class="fas fa-calendar" style="color: white"></i>
-                                            <span>{{ conference.start_date | moment("dddd, MMMM Do") }} - {{ conference.end_date | moment("dddd, MMMM Do") }}</span>
-                                        </div>
+                                    <div class="info-details info-d2" v-if="conference.brochure_link"
+                                         v-bind:class="{'show-details' : !conference.program_link && conference.brochure_link}">
+                                        <object class="iframe"
+                                                :data="conference.brochure_link"
+                                                type="application/pdf"
+                                                width="100%" height="600">
+                                            <embed :src="conference.brochure_link" type="application/pdf"/>
+                                        </object>
+                                    </div>
+                                    <!--                                <div class="info-details info-d3"-->
+                                    <!--                                     v-bind:class="{'show-details' : !conference.program_link && !conference.brochure_link}">-->
+                                    <!--                                    <AbstractForm></AbstractForm>-->
+                                    <!--                                </div>-->
+                                    <div class="info-details info-d4" v-if="conference.open"
+                                         v-bind:class="{'show-details' : !conference.program_link && !conference.brochure_link}">
+                                        <RegisterForm :url="conference.slug"></RegisterForm>
                                     </div>
                                 </div>
                             </div>
@@ -92,73 +159,11 @@
                     </div>
                 </div>
             </div>
-            <div id="more-info" class="container-fluid" style="padding-top: 20px" v-if="conference.brochure_link || conference.open">
-                <div class="col-md-12">
-                    <div class="row-title">{{conference.name}}</div>
-                    <div class="row-subtitle"></div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="links-holder">
-                                <ul>
-                                    <li v-if="conference.program_link">
-                                        <div class="info-link opened" data-id="1">Program</div>
-                                    </li>
-                                    <li v-if="conference.brochure_link">
-                                        <div class="info-link" v-bind:class="{'opened' : !conference.program_link}"
-                                             data-id="2">Brochure
-                                        </div>
-                                    </li>
-<!--                                    <li>-->
-<!--                                        <div class="info-link"-->
-<!--                                             v-bind:class="{'opened' : !conference.program_link && !conference.brochure_link}"-->
-<!--                                             data-id="3">Abstract-->
-<!--                                        </div>-->
-<!--                                    </li>-->
-                                    <li>
-                                        <div class="info-link" data-id="4" v-if="conference.open">Registration</div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="info-details-holder">
-                                <div class="info-details info-d1" v-if="conference.program_link"
-                                     v-bind:class="{'show-details' : conference.program_link}">
-                                    <object class="iframe"
-                                            :data="conference.program_link"
-                                            type="application/pdf"
-                                            width="100%" height="600">
-                                        <embed
-                                            :src="conference.program_link"
-                                            type="application/pdf"/>
-                                    </object>
-                                </div>
-                                <div class="info-details info-d2" v-if="conference.brochure_link"
-                                     v-bind:class="{'show-details' : !conference.program_link && conference.brochure_link}">
-                                    <object class="iframe"
-                                            :data="conference.brochure_link"
-                                            type="application/pdf"
-                                            width="100%" height="600">
-                                        <embed :src="conference.brochure_link" type="application/pdf"/>
-                                    </object>
-                                </div>
-<!--                                <div class="info-details info-d3"-->
-<!--                                     v-bind:class="{'show-details' : !conference.program_link && !conference.brochure_link}">-->
-<!--                                    <AbstractForm></AbstractForm>-->
-<!--                                </div>-->
-                                <div class="info-details info-d4" v-if="conference.open"
-                                     v-bind:class="{'show-details' : !conference.program_link && !conference.brochure_link}">
-                                    <RegisterForm :url="conference.slug"></RegisterForm>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Footer v-if="!notFound && !isLoading"></Footer>
         </div>
-        <Footer v-if="!isLoading"></Footer>
+        <div v-if="notFound">
+            <NotFound></NotFound>
+        </div>
     </div>
 </template>
 <script>
@@ -168,6 +173,7 @@
     import Footer from '../Footer'
     import AbstractForm from './AbstractForm'
     import RegisterForm from './RegisterForm'
+    import NotFound from '../NotFound'
 
     export default {
         name: 'App',
@@ -175,11 +181,12 @@
             return {
                 isLoading: true,
                 fullPage: true,
-                conference: null
+                conference: null,
+                notFound: false
             }
         },
         components: {
-            Navbar, Footer, AbstractForm, RegisterForm, Loading
+            Navbar, Footer, AbstractForm, RegisterForm, Loading, NotFound
         },
         mounted() {
             this.getConferencesDetails();
@@ -217,6 +224,7 @@
                         this.isLoading = false;
                     })
                     .catch(error => {
+                        this.notFound = true;
                         this.isLoading = false;
                     })
             },
