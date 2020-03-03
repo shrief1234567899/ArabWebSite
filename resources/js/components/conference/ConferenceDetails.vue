@@ -92,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div id="more-info" class="container-fluid" style="padding-top: 20px">
+            <div id="more-info" class="container-fluid" style="padding-top: 20px" v-if="conference.brochure_link || conference.open">
                 <div class="col-md-12">
                     <div class="row-title">{{conference.name}}</div>
                     <div class="row-subtitle"></div>
@@ -110,12 +110,12 @@
                                              data-id="2">Brochure
                                         </div>
                                     </li>
-                                    <li>
-                                        <div class="info-link"
-                                             v-bind:class="{'opened' : !conference.program_link && !conference.brochure_link}"
-                                             data-id="3">Abstract
-                                        </div>
-                                    </li>
+<!--                                    <li>-->
+<!--                                        <div class="info-link"-->
+<!--                                             v-bind:class="{'opened' : !conference.program_link && !conference.brochure_link}"-->
+<!--                                             data-id="3">Abstract-->
+<!--                                        </div>-->
+<!--                                    </li>-->
                                     <li>
                                         <div class="info-link" data-id="4" v-if="conference.open">Registration</div>
                                     </li>
@@ -144,12 +144,13 @@
                                         <embed :src="conference.brochure_link" type="application/pdf"/>
                                     </object>
                                 </div>
-                                <div class="info-details info-d3"
+<!--                                <div class="info-details info-d3"-->
+<!--                                     v-bind:class="{'show-details' : !conference.program_link && !conference.brochure_link}">-->
+<!--                                    <AbstractForm></AbstractForm>-->
+<!--                                </div>-->
+                                <div class="info-details info-d4" v-if="conference.open"
                                      v-bind:class="{'show-details' : !conference.program_link && !conference.brochure_link}">
-                                    <AbstractForm></AbstractForm>
-                                </div>
-                                <div class="info-details info-d4" v-if="conference.open">
-                                    <RegisterForm></RegisterForm>
+                                    <RegisterForm :url="conference.slug"></RegisterForm>
                                 </div>
                             </div>
                         </div>
@@ -205,6 +206,8 @@
                             response.data.data.image = 'https://araborganizers-system.com' + response.data.data.image;
                             if (response.data.data.brochure_link)
                                 response.data.data.brochure_link = 'https://araborganizers-system.com' + response.data.data.brochure_link;
+                            if (response.data.data.slug)
+                                response.data.data.slug = 'https://araborganizers-system.com/' + response.data.data.slug;
                             this.conference = response.data.data;
                             Vue.nextTick(function () {
                                 $('.info-details').hide();

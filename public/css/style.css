@@ -3262,6 +3262,10 @@ svg.logo text {
     .pricing-header .th-features {
         display: none;
     }
+
+    .info-details{
+        padding-top: 50px;
+    }
 }
 
 @media (max-width: 768px) {
