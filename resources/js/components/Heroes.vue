@@ -29,7 +29,7 @@
                                     </p>
                                 </div>
                                 <div class="pricing-link">
-                                    <a class="ybtn" target="_blank" href="/about">More</a>
+                                    <a class="ybtn" target="_blank" href="http://www.gamalesmat.com/">More</a>
                                 </div>
                             </div>
                         </div>

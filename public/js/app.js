@@ -47368,7 +47368,10 @@ var staticRenderFns = [
                 "a",
                 {
                   staticClass: "ybtn",
-                  attrs: { target: "_blank", href: "/about" }
+                  attrs: {
+                    target: "_blank",
+                    href: "http://www.gamalesmat.com/"
+                  }
                 },
                 [_vm._v("More")]
               )
