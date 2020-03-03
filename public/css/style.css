@@ -3266,6 +3266,10 @@ svg.logo text {
     .info-details{
         padding-top: 50px;
     }
+
+    .recaptcha {
+        margin-left: 0% !important;
+    }
 }
 
 @media (max-width: 768px) {
@@ -4509,13 +4513,14 @@ svg.logo text {
 
 .signin-signup-form .form-text input, .signin-signup-form .form-text .dropdown-toggle.btn-default {
     width: 100%;
-    padding: 8px 20px;
+    padding: 13px 20px;
     text-align: left;
-    border: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid #cfcfcf;
     outline: 0;
     border-radius: 8px;
-    background-color: #f1f1f1;
-    font-size: 13px;
+    background-color: #fff;
+    font-size: 15px;
     color: #526489;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -7085,6 +7090,11 @@ svg.logo text {
 }
 
 @media (max-width: 768px) {
+    .v--modal{
+        width: auto !important;
+        left: 0px !important;
+    }
+
     .logo-holder{
         position: absolute;
         left: 10% !important;

@@ -24,8 +24,6 @@
     .error-icon {
         font-size: 18px;
         color: #721c24;
-        text-transform: uppercase;
-        letter-spacing: 1px;
         border-radius: 30%;
         animation: shadow-pulse 1s infinite;
     }

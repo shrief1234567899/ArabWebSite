@@ -11,7 +11,7 @@
                     </div>
                 </div>
             </div>
-            <Conferences type="old"></Conferences>
+            <Conferences type="get-previous-conferences"></Conferences>
         </div>
         <Footer></Footer>
     </div>

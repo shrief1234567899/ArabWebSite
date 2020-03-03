@@ -31,7 +31,7 @@
 
     .links-holder {
         background-color: #f1f1f1;
-        border-radius: 10%;
+        border-radius: 10px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
@@ -74,7 +74,7 @@
                                     <hr style="color: white">
                                     <div class="row">
                                         <div class="col-md-12" style="padding-top:10px">
-                                            <div class="address" style="color: white">
+                                            <div class="address" style="color: white;">
                                                 <i class="fas fa-map-marker" style="color: white"></i>
                                                 {{conference.address}}
                                             </div>
@@ -84,7 +84,7 @@
                                         <div class="col-md-12" style="padding-top:10px">
                                             <div class="day" style="color: white">
                                                 <i class="fas fa-calendar" style="color: white"></i>
-                                                <span>{{ conference.start_date | moment("dddd, MMMM Do") }} - {{ conference.end_date | moment("dddd, MMMM Do") }}</span>
+                                                <span style="color: white !important;">{{ conference.start_date | moment("dddd, MMMM Do") }} - {{ conference.end_date | moment("dddd, MMMM Do") }}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -106,8 +106,11 @@
                                         <li v-if="conference.program_link">
                                             <div class="info-link opened" data-id="1">Program</div>
                                         </li>
+                                        <li>
+                                            <div class="info-link opened" data-id="4" v-if="conference.open">Registration</div>
+                                        </li>
                                         <li v-if="conference.brochure_link">
-                                            <div class="info-link" v-bind:class="{'opened' : !conference.program_link}"
+                                            <div class="info-link" v-bind:class="{'opened' : !conference.program_link && !conference.open}"
                                                  data-id="2">Brochure
                                             </div>
                                         </li>
@@ -117,14 +120,14 @@
                                         <!--                                             data-id="3">Abstract-->
                                         <!--                                        </div>-->
                                         <!--                                    </li>-->
-                                        <li>
-                                            <div class="info-link" data-id="4" v-if="conference.open">Registration</div>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-md-9">
                                 <div class="info-details-holder">
+                                    <div class="info-details info-d4 show-details" v-if="conference.open">
+                                        <RegisterForm :url="conference.slug" :specialityOptions="specialities" :conferenceId="$route.params.id"></RegisterForm>
+                                    </div>
                                     <div class="info-details info-d1" v-if="conference.program_link"
                                          v-bind:class="{'show-details' : conference.program_link}">
                                         <object class="iframe"
@@ -137,7 +140,7 @@
                                         </object>
                                     </div>
                                     <div class="info-details info-d2" v-if="conference.brochure_link"
-                                         v-bind:class="{'show-details' : !conference.program_link && conference.brochure_link}">
+                                         v-bind:class="{'show-details' : !conference.program_link && conference.brochure_link && !conference.open}">
                                         <object class="iframe"
                                                 :data="conference.brochure_link"
                                                 type="application/pdf"
@@ -149,10 +152,6 @@
                                     <!--                                     v-bind:class="{'show-details' : !conference.program_link && !conference.brochure_link}">-->
                                     <!--                                    <AbstractForm></AbstractForm>-->
                                     <!--                                </div>-->
-                                    <div class="info-details info-d4" v-if="conference.open"
-                                         v-bind:class="{'show-details' : !conference.program_link && !conference.brochure_link}">
-                                        <RegisterForm :url="conference.slug"></RegisterForm>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -182,7 +181,8 @@
                 isLoading: true,
                 fullPage: true,
                 conference: null,
-                notFound: false
+                notFound: false,
+                specialities: []
             }
         },
         components: {
@@ -209,13 +209,14 @@
                 axios
                     .get('https://araborganizers-system.com/api/get-single-conference?id=' + this.$route.params.id)
                     .then(response => {
-                        if (typeof response.data.data != "undefined") {
-                            response.data.data.image = 'https://araborganizers-system.com' + response.data.data.image;
-                            if (response.data.data.brochure_link)
-                                response.data.data.brochure_link = 'https://araborganizers-system.com' + response.data.data.brochure_link;
-                            if (response.data.data.slug)
-                                response.data.data.slug = 'https://araborganizers-system.com/' + response.data.data.slug;
-                            this.conference = response.data.data;
+                        if (typeof response.data.data.conference != "undefined") {
+                            response.data.data.conference.image = 'https://araborganizers-system.com' + response.data.data.conference.image;
+                            if (response.data.data.conference.brochure_link)
+                                response.data.data.conference.brochure_link = 'https://araborganizers-system.com' + response.data.data.conference.brochure_link;
+                            if (response.data.data.conference.slug)
+                                response.data.data.conference.slug = 'https://araborganizers-system.com/api/register-guest';
+                            this.conference = response.data.data.conference;
+                            this.specialities = response.data.data.specialities;
                             Vue.nextTick(function () {
                                 $('.info-details').hide();
                                 $('.show-details').show();
