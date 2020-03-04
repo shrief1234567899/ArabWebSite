@@ -535,7 +535,7 @@ svg.logo text {
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    color: rgba(55, 48, 88, 0.7);
+    color: rgba(220, 48, 88, 0.7);
 }
 
 .navbar-default .navbar-nav > li > a.login-button {
@@ -543,8 +543,8 @@ svg.logo text {
 }
 
 .navbar-default .navbar-nav > .active a, .navbar-default .navbar-nav > .active a:focus, .navbar-default .navbar-nav > .active a:hover {
-    color: #dbc2fe;
-    background-color: transparent;
+    /*color: #dbc2fe;*/
+    /*background-color: transparent;*/
 }
 
 .support-button-holder {
@@ -7436,4 +7436,24 @@ svg.logo text {
 
 #section{
     padding-top: 70px;
+}
+
+.router-link-active {
+    background-color: #383058;
+    color: white !important;
+    border-radius: 10px;
+    padding-bottom: 10px !important;
+    padding-top: 10px !important;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+    margin-top: 13%;
+}
+
+.router-link-active:hover{
+    color: white !important;
+    background-color: #383058 !important;
+}
+
+.router-link-active:focus{
+    color: white !important;
+    background-color: #383058 !important;
 }
