@@ -10,7 +10,7 @@
     <div id="articles" class="container-fluid">
         <loading :active.sync="isLoading"
                  color="#c94328"
-                 :can-cancel="true"
+                 :can-cancel="false"
                  :height="100"
                  :width="200"
                  :opacity="0.6"
