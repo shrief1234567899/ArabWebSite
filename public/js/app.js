@@ -3053,6 +3053,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
   data: function data() {
@@ -8702,7 +8703,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nimg{\n    border-radius: 7px;\n}\n.mfeature-box{\n    min-height: 400px;\n}\n", ""]);
+exports.push([module.i, "\nimg {\n    border-radius: 7px;\n}\n.mfeature-box {\n    min-height: 400px;\n}\n", ""]);
 
 // exports
 
@@ -48832,8 +48833,7 @@ var staticRenderFns = [
               attrs: {
                 width: "200",
                 height: "100",
-                src:
-                  "https://eventacademy.com/wp-content/uploads/2018/11/cambridge-corporate-photographer-io-2016-003.jpg",
+                src: "/images/topServices/event_mang.jpg",
                 alt: ""
               }
             })
@@ -48844,11 +48844,9 @@ var staticRenderFns = [
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "mfeature-details" }, [
-            _c("p", [_vm._v("• Venue finding and Contract Negotiation")]),
-            _vm._v(" "),
-            _c("p", [_vm._v("• Sponsorship Proposals ")]),
-            _vm._v(" "),
-            _c("p", [_vm._v("• Financial Management ")])
+            _vm._v(
+              "\n                            • Venue finding and Contract Negotiation • Sponsorship Proposals • Financial Management\n                            • Marketing and Telesales • Event Budget and Cash Flow Preparation • Full Secretariat\n                            Service\n                        "
+            )
           ])
         ])
       ]),
@@ -48860,8 +48858,7 @@ var staticRenderFns = [
               attrs: {
                 width: "200",
                 height: "100",
-                src:
-                  "https://araborganizers.org/UserFiles/ServicesPhotos/48390.jpg",
+                src: "/images/topServices/audio.jpg",
                 alt: ""
               }
             })
@@ -48886,8 +48883,7 @@ var staticRenderFns = [
               attrs: {
                 width: "200",
                 height: "100",
-                src:
-                  "https://static.travelweekly.com/i/sized/780/437/images.ntmllc.com/v4/Hotel/L93/L93229/L93229_EXT2_Z14B33.jpg",
+                src: "/images/topServices/hotel.jpg",
                 alt: ""
               }
             })

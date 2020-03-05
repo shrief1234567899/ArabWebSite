@@ -1,8 +1,9 @@
 <style>
-    img{
+    img {
         border-radius: 7px;
     }
-    .mfeature-box{
+
+    .mfeature-box {
         min-height: 400px;
     }
 </style>
@@ -21,14 +22,14 @@
                         <div class="mfeature-box">
                             <div class="mfeature-icon">
                                 <img width="200" height="100"
-                                     src="https://eventacademy.com/wp-content/uploads/2018/11/cambridge-corporate-photographer-io-2016-003.jpg"
+                                     src="/images/topServices/event_mang.jpg"
                                      alt="">
                             </div>
                             <div class="mfeature-title">Event Management</div>
                             <div class="mfeature-details">
-                                <p>• Venue finding and Contract Negotiation</p>
-                                <p>• Sponsorship Proposals </p>
-                                <p>• Financial Management </p>
+                                • Venue finding and Contract Negotiation • Sponsorship Proposals • Financial Management
+                                • Marketing and Telesales • Event Budget and Cash Flow Preparation • Full Secretariat
+                                Service
                             </div>
                         </div>
                     </div>
@@ -36,7 +37,7 @@
                         <div class="mfeature-box">
                             <div class="mfeature-icon">
                                 <img width="200" height="100"
-                                     src="https://araborganizers.org/UserFiles/ServicesPhotos/48390.jpg"
+                                     src="/images/topServices/audio.jpg"
                                      alt="">
                             </div>
                             <div class="mfeature-title">Audio Visual Setup</div>
@@ -52,7 +53,7 @@
                         <div class="mfeature-box">
                             <div class="mfeature-icon">
                                 <img width="200" height="100"
-                                     src="https://static.travelweekly.com/i/sized/780/437/images.ntmllc.com/v4/Hotel/L93/L93229/L93229_EXT2_Z14B33.jpg"
+                                     src="/images/topServices/hotel.jpg"
                                      alt="">
                             </div>
                             <div class="mfeature-title">Hotel booking & preferential rates</div>
