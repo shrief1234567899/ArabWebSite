@@ -58,6 +58,15 @@
             errors: Array
         },
         mounted() {
+            console.log('hellp');
         },
+        updated: function () {
+            this.$nextTick(function () {
+                var $container = $("html,body");
+                var $scrollTo = $('.signin-signup-form');
+
+                $container.animate({scrollTop: $scrollTo.offset().top-100 , scrollLeft: 0},300);
+            })
+        }
     }
 </script>

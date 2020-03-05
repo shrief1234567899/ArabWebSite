@@ -3964,7 +3964,19 @@ __webpack_require__.r(__webpack_exports__);
   props: {
     errors: Array
   },
-  mounted: function mounted() {}
+  mounted: function mounted() {
+    console.log('hellp');
+  },
+  updated: function updated() {
+    this.$nextTick(function () {
+      var $container = $("html,body");
+      var $scrollTo = $('.signin-signup-form');
+      $container.animate({
+        scrollTop: $scrollTo.offset().top - 100,
+        scrollLeft: 0
+      }, 300);
+    });
+  }
 });
 
 /***/ }),
