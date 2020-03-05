@@ -74,7 +74,7 @@
                         </div>
                         <v-select :options="specialityOptions" style="padding-top: 10px;border-radius:10px"
                                   placeholder="Select Speciality" v-model="speciality"></v-select>
-                        <div style="padding-top: 15px;margin-left: 30%;width:100%" class="recaptcha">
+                        <div style="padding-top: 15px;padding-left: 30%;width:100%" class="recaptcha">
                             <vue-recaptcha sitekey="6LeNrtoUAAAAAGxUhsYh1SzNeoYB24vMQ0Dj1vlR"
                                            size="1000"></vue-recaptcha>
                         </div>
