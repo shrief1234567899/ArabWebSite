@@ -49805,7 +49805,7 @@ var render = function() {
                       staticClass: "recaptcha",
                       staticStyle: {
                         "padding-top": "15px",
-                        "margin-left": "30%",
+                        "padding-left": "30%",
                         width: "100%"
                       }
                     },
