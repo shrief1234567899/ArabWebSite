@@ -20,6 +20,15 @@
                  :is-full-page="fullPage"></loading>
         <Navbar></Navbar>
         <div id="section" style="text-align: center">
+            <div id="page-head" class="container-fluid inner-page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="page-title">{{ $t("message.videos") }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <gallery
                 :images="images"
                 :index="index"

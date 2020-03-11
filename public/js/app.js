@@ -3809,6 +3809,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -51664,6 +51673,25 @@ var render = function() {
         "div",
         { staticStyle: { "text-align": "center" }, attrs: { id: "section" } },
         [
+          _c(
+            "div",
+            {
+              staticClass: "container-fluid inner-page",
+              attrs: { id: "page-head" }
+            },
+            [
+              _c("div", { staticClass: "container" }, [
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-md-12 text-center" }, [
+                    _c("div", { staticClass: "page-title" }, [
+                      _vm._v(_vm._s(_vm.$t("message.videos")))
+                    ])
+                  ])
+                ])
+              ])
+            ]
+          ),
+          _vm._v(" "),
           _c("gallery", {
             attrs: {
               images: _vm.images,
