@@ -114,12 +114,12 @@
                                                  data-id="2">Brochure
                                             </div>
                                         </li>
-                                        <!--                                    <li>-->
-                                        <!--                                        <div class="info-link"-->
-                                        <!--                                             v-bind:class="{'opened' : !conference.program_link && !conference.brochure_link}"-->
-                                        <!--                                             data-id="3">Abstract-->
-                                        <!--                                        </div>-->
-                                        <!--                                    </li>-->
+<!--                                        <li>-->
+<!--                                            <div class="info-link"-->
+<!--                                                 v-bind:class="{'opened' : !conference.program_link && !conference.brochure_link}"-->
+<!--                                                 data-id="3">Abstract-->
+<!--                                            </div>-->
+<!--                                        </li>-->
                                     </ul>
                                 </div>
                             </div>
@@ -148,10 +148,10 @@
                                             <embed :src="conference.brochure_link" type="application/pdf"/>
                                         </object>
                                     </div>
-                                    <!--                                <div class="info-details info-d3"-->
-                                    <!--                                     v-bind:class="{'show-details' : !conference.program_link && !conference.brochure_link}">-->
-                                    <!--                                    <AbstractForm></AbstractForm>-->
-                                    <!--                                </div>-->
+<!--                                    <div class="info-details info-d3"-->
+<!--                                         v-bind:class="{'show-details' : !conference.program_link && !conference.brochure_link}">-->
+<!--                                        <AbstractForm :url="conference.slug" :specialityOptions="specialities" :conferenceId="$route.params.id"></AbstractForm>-->
+<!--                                    </div>-->
                                 </div>
                             </div>
                         </div>
